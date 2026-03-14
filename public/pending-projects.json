@@ -1,0 +1,11 @@
+[
+  {
+    "projectName": "ClipStock",
+    "description": "クリップボード履歴マネージャー（Electron）。起動: デスクトップのClipStock.commandをダブルクリック",
+    "urls": [],
+    "reasoning": "手動登録（ローカルプロジェクト）",
+    "confidence": "high",
+    "status": "developing",
+    "localFolder": "~/Desktop/clipstock_v2"
+  }
+]
