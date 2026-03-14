@@ -109,10 +109,15 @@
   {
     "projectName": "VibeMochi (もちもちモチ)",
     "description": "不思議なモチの赤ちゃんを育てる育成ゲーム。",
-    "urls": [],
-    "reasoning": "手動登録（ローカルプロジェクト）",
+    "urls": [
+      {
+        "url": "https://vibemochi-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyにデプロイ済み。",
     "confidence": "high",
-    "status": "developing",
+    "status": "active",
     "techStack": [],
     "localFolder": "~/Desktop/vibemochi"
   },
@@ -123,11 +128,15 @@
       {
         "url": "https://github.com/jun-kou-dai/kodomo-zukan",
         "role": "ソースコード"
+      },
+      {
+        "url": "https://jun-kou-dai.github.io/kodomo-zukan/",
+        "role": "デプロイ先"
       }
     ],
-    "reasoning": "GitHubリポジトリが存在し、リポジトリ名がプロジェクト内容を示している。デプロイ先は不明。",
+    "reasoning": "GitHubリポジトリが存在し、GitHub Pagesにデプロイ済み。",
     "confidence": "high",
-    "status": "developing",
+    "status": "active",
     "techStack": [
       "TypeScript",
       "Next.js"
@@ -141,11 +150,15 @@
       {
         "url": "https://github.com/jun-kou-dai/memonomaryoku",
         "role": "ソースコード"
+      },
+      {
+        "url": "https://jun-kou-dai.github.io/memonomaryoku/",
+        "role": "デプロイ先"
       }
     ],
-    "reasoning": "GitHubリポジトリが存在し、リポジトリ名と説明文が明確にプロジェクト内容を示している。デプロイ先は不明。",
+    "reasoning": "GitHubリポジトリが存在し、GitHub Pagesにデプロイ済み。",
     "confidence": "high",
-    "status": "developing",
+    "status": "active",
     "techStack": [
       "JavaScript"
     ],
@@ -158,6 +171,10 @@
       {
         "url": "https://github.com/jun-kou-dai/tubuyaki",
         "role": "ソースコード"
+      },
+      {
+        "url": "https://tubuyaki.vercel.app",
+        "role": "デプロイ先"
       }
     ],
     "reasoning": "GitHubリポジトリが存在し、リポジトリ名と説明文が明確にプロジェクト内容を示している。GitHubのhomepage URLが 'https://tubuyaki.vercel.app' を示しており、デプロイ先が存在する可能性が高い。",
@@ -176,11 +193,15 @@
       {
         "url": "https://github.com/jun-kou-dai/ai-sukejuru",
         "role": "ソースコード"
+      },
+      {
+        "url": "https://jun-kou-dai.github.io/ai-sukejuru/",
+        "role": "デプロイ先"
       }
     ],
-    "reasoning": "GitHubリポジトリが存在し、リポジトリ名がプロジェクト内容を示している。'AI Auto Scheduler'と類似するが、別リポジトリとして存在する為、異なる案件として扱う。デプロイ先は不明。",
+    "reasoning": "GitHubリポジトリが存在し、GitHub Pagesにデプロイ済み。",
     "confidence": "high",
-    "status": "developing",
+    "status": "active",
     "techStack": [
       "TypeScript"
     ],
