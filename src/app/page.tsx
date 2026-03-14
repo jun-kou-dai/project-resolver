@@ -27,12 +27,31 @@ export default function Home() {
           return;
         }
         const current = data || { projects: [], ungrouped: [], lastUpdated: '', allUrls: [] as string[] };
-        const existingNames = current.projects.map(p => p.projectName);
-        const newProjects = pending.filter(p => !existingNames.includes(p.projectName));
-        if (newProjects.length > 0) {
+        const existingNames = new Map(current.projects.map((p, i) => [p.projectName, i]));
+        // 既存プロジェクトを更新 + 新規を追加
+        const updatedProjects = [...current.projects];
+        let changed = false;
+        for (const p of pending) {
+          const idx = existingNames.get(p.projectName);
+          if (idx !== undefined) {
+            // 既存: URLやステータスが増えていれば更新
+            const existing = updatedProjects[idx];
+            const pendingUrlSet = new Set(p.urls?.map((u: { url: string }) => u.url) || []);
+            const existingUrlSet = new Set(existing.urls?.map(u => u.url) || []);
+            const hasNewUrls = [...pendingUrlSet].some(u => !existingUrlSet.has(u));
+            if (hasNewUrls || (!existing.localFolder && p.localFolder)) {
+              updatedProjects[idx] = { ...existing, ...p, localFolder: existing.localFolder || p.localFolder };
+              changed = true;
+            }
+          } else {
+            updatedProjects.push(p);
+            changed = true;
+          }
+        }
+        if (changed) {
           const merged: SavedData = {
             ...current,
-            projects: [...current.projects, ...newProjects],
+            projects: updatedProjects,
             lastUpdated: new Date().toLocaleString('ja-JP'),
           };
           saveData(merged);
