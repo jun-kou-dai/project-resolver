@@ -1,5 +1,267 @@
 [
   {
+    "projectName": "Project Resolver",
+    "description": "複数のURLをAIが自動でプロジェクトごとにグループ化するツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/project-resolver",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://project-resolver-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名 (project-resolver) とNetlifyのURLのslug (project-resolver-app) が一致。また、Netlifyサイトのタイトル・説明文がGitHubリポジトリの機能と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Desktop/project-resolver"
+  },
+  {
+    "projectName": "Kotoba App (ことば学習アプリ)",
+    "description": "2〜5歳向け語彙学習アプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/kotoba-app",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://kotoba-app-2026.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名 (kotoba-app) とNetlifyのURLのslug (kotoba-app-2026) が一致。GitHubのリポジトリ説明とNetlifyサイトのタイトル・説明文が、子供向け語彙学習という点で一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Desktop/kotoba-app"
+  },
+  {
+    "projectName": "Onsei / EarFlow (音声文字起こし・ニュース読み上げ)",
+    "description": "音声文字起こし機能と、耳で聞くニュースを提供するサービス。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/onsei",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://onsei-beta.vercel.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリのhomepage URL (https://onsei-beta.vercel.app) がVercelのデプロイ先URLと完全に一致（最強の根拠）。リポジトリ名 'onsei' (音声) と説明 '音声文字起こし' が、デプロイ先サイトのタイトル 'EarFlow - 耳で読むニュース' と機能的に関連性がある。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "JavaScript"
+    ],
+    "localFolder": "~/Desktop/onsei"
+  },
+  {
+    "projectName": "AI Auto Scheduler",
+    "description": "AIによる自動スケジュール調整ツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/ai-auto-scheduler",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://jun-kou-dai.github.io/ai-auto-scheduler/",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名 (ai-auto-scheduler) とGitHub PagesのURLのslugが完全に一致。GitHub Pagesサイトのタイトルもリポジトリ名と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript"
+    ],
+    "localFolder": "~/Desktop/ai-auto-scheduler"
+  },
+  {
+    "projectName": "Asa-check (朝チェック共有ツール)",
+    "description": "離れて暮らす親の朝の確認をサポートするツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/asa-check",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://asa-check-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリとNetlifyサイトが対応。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Desktop/asa-check"
+  },
+  {
+    "projectName": "VibeMochi (もちもちモチ)",
+    "description": "不思議なモチの赤ちゃんを育てる育成ゲーム。",
+    "urls": [],
+    "reasoning": "手動登録（ローカルプロジェクト）",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [],
+    "localFolder": "~/Desktop/vibemochi"
+  },
+  {
+    "projectName": "Kodomo Zukan (こども図鑑)",
+    "description": "子供向けの図鑑アプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/kodomo-zukan",
+        "role": "ソースコード"
+      }
+    ],
+    "reasoning": "GitHubリポジトリが存在し、リポジトリ名がプロジェクト内容を示している。デプロイ先は不明。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Desktop/kodomo-zukan"
+  },
+  {
+    "projectName": "Memo no Maryoku (メモの魔力 / メモからAI)",
+    "description": "メモの内容からAIが情報を生成するツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/memonomaryoku",
+        "role": "ソースコード"
+      }
+    ],
+    "reasoning": "GitHubリポジトリが存在し、リポジトリ名と説明文が明確にプロジェクト内容を示している。デプロイ先は不明。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "JavaScript"
+    ],
+    "localFolder": "~/Desktop/memonomaryoku"
+  },
+  {
+    "projectName": "Tubuyaki (呟きアプリ)",
+    "description": "シンプルな呟き投稿アプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/tubuyaki",
+        "role": "ソースコード"
+      }
+    ],
+    "reasoning": "GitHubリポジトリが存在し、リポジトリ名と説明文が明確にプロジェクト内容を示している。GitHubのhomepage URLが 'https://tubuyaki.vercel.app' を示しており、デプロイ先が存在する可能性が高い。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Desktop/tubuyaki"
+  },
+  {
+    "projectName": "AI Sukejuru (AIスケジュール)",
+    "description": "AIを活用したスケジュール管理アプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/ai-sukejuru",
+        "role": "ソースコード"
+      }
+    ],
+    "reasoning": "GitHubリポジトリが存在し、リポジトリ名がプロジェクト内容を示している。'AI Auto Scheduler'と類似するが、別リポジトリとして存在する為、異なる案件として扱う。デプロイ先は不明。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "TypeScript"
+    ],
+    "localFolder": "~/Desktop/ai-sukejuru"
+  },
+  {
+    "projectName": "Toilet Finder JP (今すぐトイレ)",
+    "description": "現在地周辺の公共トイレやコンビニなどを検索できるマップアプリ。",
+    "urls": [
+      {
+        "url": "https://toilet-finder-jp.netlify.app",
+        "role": "プロダクトサイト"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル、見出し、コンテンツ抜粋から機能が明確。URLのslug (toilet-finder-jp) も内容と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/toilet-finder"
+  },
+  {
+    "projectName": "Kodomo Park (子どもとおでかけ公園マップ)",
+    "description": "設備情報つきで、子どもとのお出かけ先（公園）を探せるマップアプリ。",
+    "urls": [
+      {
+        "url": "https://kodomo-park.netlify.app",
+        "role": "プロダクトサイト"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル、見出し、コンテンツ抜粋から機能が明確。URLのslug (kodomo-park) も内容と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/kodomo-park"
+  },
+  {
+    "projectName": "Kyoku Gacha (今日の一曲ガチャ)",
+    "description": "気分や場面に合わせておすすめの曲を提供するPWA。",
+    "urls": [
+      {
+        "url": "https://kyoku-gacha.netlify.app",
+        "role": "プロダクトサイト"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル、説明、コンテンツ抜粋から機能が明確。URLのslug (kyoku-gacha) も内容と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/kyoku-gacha"
+  },
+  {
+    "projectName": "Osoto Tenki (おそと天気)",
+    "description": "天気情報をユーザーの行動に合わせたアドバイスに変換するアプリ。",
+    "urls": [
+      {
+        "url": "https://osoto-tenki.netlify.app",
+        "role": "プロダクトサイト"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル、見出し、コンテンツ抜粋から機能が明確。URLのslug (osoto-tenki) も内容と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/osoto-tenki"
+  },
+  {
+    "projectName": "Ima Yatteru? (今やってる？ - 営業中のお店マップ)",
+    "description": "現在営業中のお店（薬局、飲食店、コンビニなど）を検索できるマップアプリ。",
+    "urls": [
+      {
+        "url": "https://ima-yatteru.netlify.app",
+        "role": "プロダクトサイト"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル、見出し、コンテンツ抜粋から機能が明確。URLのslug (ima-yatteru) も内容と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/ima-yatteru"
+  },
+  {
     "projectName": "ClipStock",
     "description": "クリップボード履歴マネージャー（Electron）。起動: デスクトップのClipStock.commandをダブルクリック",
     "urls": [],
@@ -7,5 +269,23 @@
     "confidence": "high",
     "status": "developing",
     "localFolder": "~/Desktop/clipstock_v2"
+  },
+  {
+    "projectName": "Nano Storybook",
+    "description": "子ども向けAI絵本生成アプリ。Gemini APIで物語とイラストを自動生成",
+    "urls": [],
+    "reasoning": "手動登録（ローカルプロジェクト）",
+    "confidence": "high",
+    "status": "developing",
+    "localFolder": "~/Desktop/nano-storybook"
+  },
+  {
+    "projectName": "Gym Phone App",
+    "description": "ジムでの電話記録管理アプリ",
+    "urls": [],
+    "reasoning": "手動登録（ローカルプロジェクト）",
+    "confidence": "high",
+    "status": "developing",
+    "localFolder": "~/Desktop/gym-phone-app"
   }
 ]
