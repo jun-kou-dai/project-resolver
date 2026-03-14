@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Export</title></head>
+<body>
+<h2>Exporting localStorage data...</h2>
+<pre id="result"></pre>
+<script>
+(async () => {
+  const raw = localStorage.getItem('project-resolver-data');
+  if (!raw) { document.getElementById('result').textContent = 'No data found'; return; }
+  const saved = JSON.parse(raw);
+  const projects = saved.projects || [];
+  document.getElementById('result').textContent = `Found ${projects.length} projects. Sending to API...`;
+  const res = await fetch('/api/export', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ projects })
+  });
+  const json = await res.json();
+  document.getElementById('result').textContent = JSON.stringify(json, null, 2);
+})();
+</script>
+</body></html>
