@@ -62,12 +62,11 @@ export default function Home() {
       .then(res => res.ok ? res.json() : [])
       .then((projects: SavedData['projects']) => {
         if (projects && projects.length > 0) {
-          const allUrls = projects.flatMap(p => p.urls?.map(u => u.url) || []);
           const newSaved: SavedData = {
             projects,
             ungrouped: [],
             lastUpdated: new Date().toLocaleString('ja-JP'),
-            allUrls,
+            allUrls: [],
           };
           saveData(newSaved);
           setSaved(newSaved);
