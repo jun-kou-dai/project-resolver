@@ -56,22 +56,36 @@ export default function Home() {
   const [showAddForm, setShowAddForm] = useState(false);
   const [initialized, setInitialized] = useState(false);
 
-  // 起動時にpending-projects.json（GitHub経由で全デバイス共通）を読み込み
+  // 起動時にGitHub API経由で最新データを取得（全デバイス共通）
   useEffect(() => {
-    fetch(`/pending-projects.json?t=${Date.now()}`)
-      .then(res => res.ok ? res.json() : [])
-      .then((projects: SavedData['projects']) => {
-        if (projects && projects.length > 0) {
+    fetch('/api/projects')
+      .then(res => res.json())
+      .then((data: { projects?: SavedData['projects']; fallback?: boolean }) => {
+        if (data.projects && data.projects.length > 0) {
           const newSaved: SavedData = {
-            projects,
+            projects: data.projects,
             ungrouped: [],
             lastUpdated: new Date().toLocaleString('ja-JP'),
             allUrls: [],
           };
           saveData(newSaved);
           setSaved(newSaved);
+        } else if (data.fallback) {
+          // GitHub API失敗時は静的ファイル→localStorageの順にフォールバック
+          fetch(`/pending-projects.json?t=${Date.now()}`)
+            .then(res => res.ok ? res.json() : null)
+            .then(projects => {
+              if (projects && projects.length > 0) {
+                const newSaved: SavedData = { projects, ungrouped: [], lastUpdated: new Date().toLocaleString('ja-JP'), allUrls: [] };
+                saveData(newSaved);
+                setSaved(newSaved);
+              } else {
+                setSaved(loadSavedData());
+              }
+              setInitialized(true);
+            });
+          return;
         } else {
-          // オフライン等でfetch失敗時はlocalStorageをフォールバック
           setSaved(loadSavedData());
         }
         setInitialized(true);
