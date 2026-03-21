@@ -1,16 +1,459 @@
 [
   {
-    "projectName": "なきごえへんしん",
-    "description": "赤ちゃんの泣き声に合わせて花が咲き、蝶が舞い、花火が上がるインタラクティブな癒しアプリ。オルゴール、雨音、子守唄などのサウンドオプションも提供。",
+    "projectName": "Project Resolver",
+    "description": "複数のURLをAIが自動でプロジェクトごとにグループ化するツール。",
     "urls": [
       {
-        "url": "https://nakigoe-henshin.netlify.app",
+        "url": "https://github.com/jun-kou-dai/project-resolver",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://project-resolver-app.netlify.app",
         "role": "デプロイ先"
       }
     ],
-    "reasoning": "提供された唯一のURLであり、タイトル、説明文、コンテンツ抜粋から一貫して「なきごえへんしん」という名称と機能が明確に定義された単一のアプリケーションであることが読み取れるため、これを独立した一つの案件として扱います。",
+    "reasoning": "GitHubリポジトリ名とNetlifyデプロイ先URLが一致。",
     "confidence": "high",
     "status": "active",
-    "techStack": []
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Desktop/project-resolver"
+  },
+  {
+    "projectName": "Kotoba App (ことばの おべんきょう)",
+    "description": "2〜5歳向け語彙学習アプリ。楽しく言葉を覚える教育アプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/kotoba-app",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://kotoba-app-2026.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名とNetlifyデプロイ先URLが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Desktop/kotoba-app"
+  },
+  {
+    "projectName": "Kodomo Zukan (こども動物図鑑)",
+    "description": "動物を見る・聞く・知る・くらべる機能を持つ、子供向けの動物図鑑アプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/kodomo-zukan",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://jun-kou-dai.github.io/kodomo-zukan/",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリとGitHub Pagesが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Desktop/kodomo-zukan"
+  },
+  {
+    "projectName": "Memories - 子供の成長記録",
+    "description": "子供の成長記録を家族で共有できるアプリ。写真や動画で思い出を記録し、家族で共有する機能を持ちます。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/kodomoseicho",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://starlit-jelly-84dacb.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリの説明「子供の成長記録」とNetlifyサイトのタイトルが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Web Application"
+    ],
+    "localFolder": "~/code/260131 kids 4"
+  },
+  {
+    "projectName": "Asa-check (朝チェック共有ツール)",
+    "description": "離れて暮らす親の朝の確認をサポートするツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/asa-check",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://asa-check-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリとNetlifyサイトが対応。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Desktop/asa-check"
+  },
+  {
+    "projectName": "AI Auto Scheduler",
+    "description": "AIによる自動スケジュール調整ツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/ai-auto-scheduler",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://jun-kou-dai.github.io/ai-auto-scheduler/",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://ai-scheduler-proxy.netlify.app",
+        "role": "APIプロキシ"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名、GitHub Pages、Netlifyプロキシが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript"
+    ],
+    "localFolder": "~/Desktop/ai-auto-scheduler"
+  },
+  {
+    "projectName": "Onsei / EarFlow (耳で読むニュース)",
+    "description": "音声文字起こし機能と、耳で聞くニュースを提供するサービス。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/onsei",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://onsei-beta.vercel.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリのhomepage URLとVercelデプロイ先が一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "JavaScript"
+    ],
+    "localFolder": "~/Desktop/onsei"
+  },
+  {
+    "projectName": "Nano Storybook",
+    "description": "お子様だけの絵本を作成するAIを活用したサービス。Gemini APIで物語とイラストを自動生成。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/storybook",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://nano-storybook.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリの説明「絵本」とNetlifyサイトのタイトルが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "JavaScript"
+    ],
+    "localFolder": "~/Desktop/nano-storybook"
+  },
+  {
+    "projectName": "VibeMochi (もちもちモチ)",
+    "description": "モチの赤ちゃんを育て、ご飯をあげたり、なでたり、遊んだりするバーチャルペットアプリ。",
+    "urls": [
+      {
+        "url": "https://vibemochi-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル「もちもちモチ」と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/vibemochi"
+  },
+  {
+    "projectName": "Kyoku Gacha (今日の一曲ガチャ)",
+    "description": "気分や場面に合わせておすすめの曲を提供するPWA。YouTubeやSpotifyで再生可能。",
+    "urls": [
+      {
+        "url": "https://kyoku-gacha.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "PWA"
+    ],
+    "localFolder": "~/Desktop/kyoku-gacha"
+  },
+  {
+    "projectName": "Osoto Tenki (おそと天気)",
+    "description": "天気を「で、どうすればいいの？」という行動指針に変換し、通知を提供するアプリ。",
+    "urls": [
+      {
+        "url": "https://osoto-tenki.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/osoto-tenki"
+  },
+  {
+    "projectName": "Kodomo Park (子どもとおでかけ公園マップ)",
+    "description": "近くの公園を設備情報（トイレ、遊具、水辺、駐車場、ベンチ）とともに表示するマップアプリ。",
+    "urls": [
+      {
+        "url": "https://kodomo-park.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/kodomo-park"
+  },
+  {
+    "projectName": "Ima Yatteru? (今やってる？ - 営業中のお店マップ)",
+    "description": "現在営業中のお店（薬局、飲食店、コンビニなど）を検索できるマップアプリ。",
+    "urls": [
+      {
+        "url": "https://ima-yatteru.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/ima-yatteru"
+  },
+  {
+    "projectName": "Toilet Finder JP (今すぐトイレ)",
+    "description": "現在地周辺の公共トイレ、コンビニ、駅を自動で探して表示するマップアプリ。",
+    "urls": [
+      {
+        "url": "https://toilet-finder-jp.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/toilet-finder"
+  },
+  {
+    "projectName": "Tubuyaki (つぶやき)",
+    "description": "思いついたことを声に出して録音し、テキストに変換してアイデアを整理するアプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/tubuyaki",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://tubuyaki.vercel.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名とVercelデプロイ先URLが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Desktop/tubuyaki"
+  },
+  {
+    "projectName": "AI Sukejuru (AIスケジューラー)",
+    "description": "AIを活用したスケジュール管理アプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/ai-sukejuru",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://jun-kou-dai.github.io/ai-sukejuru/",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリとGitHub Pagesが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "AI"
+    ],
+    "localFolder": "~/Desktop/ai-sukejuru"
+  },
+  {
+    "projectName": "Memo no Maryoku (武器メモ / 次の一手メーカー)",
+    "description": "事実をインプットすると、議論に使える「武器カード」を自動生成するツール。Gemini API使用。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/memonomaryoku",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://jun-kou-dai.github.io/memonomaryoku/",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリとGitHub Pagesが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "JavaScript",
+      "Gemini API"
+    ],
+    "localFolder": "~/Desktop/memonomaryoku"
+  },
+  {
+    "projectName": "会員管理システム",
+    "description": "社内用の会員データ管理システム。",
+    "urls": [
+      {
+        "url": "https://merry-piroshki-95277a.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル「会員管理システム v3.0」と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/code/260204会員管理"
+  },
+  {
+    "projectName": "音声メモ (Grok対応版含む)",
+    "description": "話した内容を音声メモとして保存し、AI（Grok）による整形や各種SNS共有が可能なアプリ。",
+    "urls": [
+      {
+        "url": "https://inquisitive-cobbler-9de95c.netlify.app",
+        "role": "デプロイ先 (AI連携版)"
+      },
+      {
+        "url": "https://ornate-shortbread-b249da.netlify.app",
+        "role": "デプロイ先 (基本版)"
+      }
+    ],
+    "reasoning": "両方のURLが「音声メモ」をタイトルに持ち、音声入力・テキスト整形機能を提供。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "AI",
+      "音声認識"
+    ],
+    "localFolder": "~/code/260203voice-memo"
+  },
+  {
+    "projectName": "Knowledge Base",
+    "description": "ナレッジベースに関するHTMLアプリ。",
+    "urls": [
+      {
+        "url": "file:///Users/kajiyamajunichi/Desktop/knowledge-base.html",
+        "role": "ローカルファイル"
+      }
+    ],
+    "reasoning": "URLパスに「knowledge-base」が含まれる。",
+    "confidence": "high",
+    "status": "stopped",
+    "techStack": [],
+    "localFolder": "~/code/260206ナレッジベース"
+  },
+  {
+    "projectName": "My Memo",
+    "description": "一般的なメモアプリ。",
+    "urls": [
+      {
+        "url": "https://legendary-palmier-2f4641.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル「My Memo」と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/code/260205memo"
+  },
+  {
+    "projectName": "Gym Phone App",
+    "description": "ジムでの電話記録管理アプリ。",
+    "urls": [
+      {
+        "url": "file:///Users/kajiyamajunichi/Desktop/gym-phone-app/index.html",
+        "role": "ローカルファイル"
+      }
+    ],
+    "reasoning": "手動登録（ローカルプロジェクト）",
+    "confidence": "high",
+    "status": "stopped",
+    "techStack": [],
+    "localFolder": "~/Desktop/gym-phone-app"
+  },
+  {
+    "projectName": "ClipStock",
+    "description": "クリップボード履歴マネージャー（Electron）。起動: デスクトップのClipStock.commandをダブルクリック",
+    "urls": [],
+    "reasoning": "手動登録（ローカルプロジェクト）",
+    "confidence": "high",
+    "status": "developing",
+    "localFolder": "~/Desktop/clipstock_v2"
+  },
+  {
+    "projectName": "てあそびうた",
+    "description": "子ども向けのてあそびうたを提供するアプリケーションです。",
+    "urls": [
+      {
+        "url": "https://teasobi-uta-app.netlify.app/",
+        "role": "デプロイ先URL"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [],
+    "localFolder": "~/Desktop/teasobi-uta"
+  },
+  {
+    "projectName": "むにゃむにゃお返事おもちゃ",
+    "description": "「むにゃむにゃおへんじ」という設定可能なインタラクティブなおもちゃアプリ。Gemini APIとの連携機能も持ちます。",
+    "urls": [
+      {
+        "url": "https://munya-munya-app.netlify.app/",
+        "role": "デプロイ先URL"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Web Audio API",
+      "Gemini API"
+    ],
+    "localFolder": "~/Desktop/munya-munya"
   }
 ]
