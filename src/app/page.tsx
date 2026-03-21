@@ -128,15 +128,13 @@ export default function Home() {
     setError(null);
 
     try {
-      // 既存URLと新URLをマージして全部一緒に再解析
       const newUrls = urls.split(/[\n\r]+/).map(u => u.trim()).filter(Boolean);
-      const allUrls = saved ? mergeUrls(saved.allUrls, newUrls) : newUrls;
-      const allUrlsStr = allUrls.join('\n');
+      const newUrlsStr = newUrls.join('\n');
 
       const res = await fetch('/api/resolve', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ urls: allUrlsStr }),
+        body: JSON.stringify({ urls: newUrlsStr }),
       });
 
       const data: ResolveResponse = await res.json();
@@ -144,11 +142,15 @@ export default function Home() {
       if (!data.success) {
         setError(data.error || '不明なエラー');
       } else if (data.data) {
+        // 既存プロジェクトに新しいプロジェクトを追加（名前で重複排除）
+        const existingProjects = saved?.projects || [];
+        const existingNames = new Set(existingProjects.map(p => p.projectName));
+        const addedProjects = data.data.projects.filter(p => !existingNames.has(p.projectName));
         const newSaved: SavedData = {
-          projects: data.data.projects,
+          projects: [...existingProjects, ...addedProjects],
           ungrouped: data.data.ungrouped,
           lastUpdated: new Date().toLocaleString('ja-JP'),
-          allUrls,
+          allUrls: newUrls,
         };
         saveData(newSaved);
         setSaved(newSaved);
