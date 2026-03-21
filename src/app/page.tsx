@@ -56,55 +56,29 @@ export default function Home() {
   const [showAddForm, setShowAddForm] = useState(false);
   const [initialized, setInitialized] = useState(false);
 
-  // 起動時にlocalStorageから読み込み + pending-projectsを自動マージ
+  // 起動時にpending-projects.json（GitHub経由で全デバイス共通）を読み込み
   useEffect(() => {
-    const data = loadSavedData();
-    // pending-projects.jsonがあれば自動登録
     fetch('/pending-projects.json')
       .then(res => res.ok ? res.json() : [])
-      .then((pending: Array<typeof data extends null ? never : NonNullable<typeof data>['projects'][0]>) => {
-        if (!pending || pending.length === 0) {
-          setSaved(data);
-          setInitialized(true);
-          return;
-        }
-        const current = data || { projects: [], ungrouped: [], lastUpdated: '', allUrls: [] as string[] };
-        const existingNames = new Map(current.projects.map((p, i) => [p.projectName, i]));
-        // 既存プロジェクトを更新 + 新規を追加
-        const updatedProjects = [...current.projects];
-        let changed = false;
-        for (const p of pending) {
-          const idx = existingNames.get(p.projectName);
-          if (idx !== undefined) {
-            // 既存: URLやステータスが増えていれば更新
-            const existing = updatedProjects[idx];
-            const pendingUrlSet = new Set(p.urls?.map((u: { url: string }) => u.url) || []);
-            const existingUrlSet = new Set(existing.urls?.map(u => u.url) || []);
-            const hasNewUrls = [...pendingUrlSet].some(u => !existingUrlSet.has(u));
-            if (hasNewUrls || (!existing.localFolder && p.localFolder)) {
-              updatedProjects[idx] = { ...existing, ...p, localFolder: existing.localFolder || p.localFolder };
-              changed = true;
-            }
-          } else {
-            updatedProjects.push(p);
-            changed = true;
-          }
-        }
-        if (changed) {
-          const merged: SavedData = {
-            ...current,
-            projects: updatedProjects,
+      .then((projects: SavedData['projects']) => {
+        if (projects && projects.length > 0) {
+          const allUrls = projects.flatMap(p => p.urls?.map(u => u.url) || []);
+          const newSaved: SavedData = {
+            projects,
+            ungrouped: [],
             lastUpdated: new Date().toLocaleString('ja-JP'),
+            allUrls,
           };
-          saveData(merged);
-          setSaved(merged);
+          saveData(newSaved);
+          setSaved(newSaved);
         } else {
-          setSaved(data);
+          // オフライン等でfetch失敗時はlocalStorageをフォールバック
+          setSaved(loadSavedData());
         }
         setInitialized(true);
       })
       .catch(() => {
-        setSaved(data);
+        setSaved(loadSavedData());
         setInitialized(true);
       });
   }, []);
