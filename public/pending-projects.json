@@ -455,5 +455,22 @@
       "Gemini API"
     ],
     "localFolder": "~/Desktop/munya-munya"
+  },
+  {
+    "projectName": "なきごえへんしん",
+    "description": "赤ちゃんの泣き声がインタラクティブな視覚効果（花が咲き、蝶が舞う、花火が上がる）と連動し、音楽を生成するサービス。",
+    "urls": [
+      {
+        "url": "https://nakigoe-henshin.netlify.app",
+        "role": "公開サイト"
+      }
+    ],
+    "reasoning": "提供されたURLは単独で一つの機能を持つWebアプリケーションであり、そのタイトル、説明、コンテンツ抜粋が一貫して「なきごえへんしん」という特定のサービスを説明しているため、一つのプロジェクトとして確立できます。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Frontend (JavaScript Framework)",
+      "Netlify"
+    ]
   }
 ]
