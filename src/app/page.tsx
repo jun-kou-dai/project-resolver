@@ -58,7 +58,7 @@ export default function Home() {
 
   // 起動時にpending-projects.json（GitHub経由で全デバイス共通）を読み込み
   useEffect(() => {
-    fetch('/pending-projects.json')
+    fetch(`/pending-projects.json?t=${Date.now()}`)
       .then(res => res.ok ? res.json() : [])
       .then((projects: SavedData['projects']) => {
         if (projects && projects.length > 0) {

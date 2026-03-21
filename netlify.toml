@@ -2,5 +2,10 @@
   command = "npm run build"
   publish = ".next"
 
+[[headers]]
+  for = "/pending-projects.json"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
