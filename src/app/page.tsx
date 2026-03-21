@@ -6,6 +6,48 @@ import { LoadingIndicator } from './components/LoadingIndicator';
 import type { ResolveResponse } from '@/lib/types';
 import { loadSavedData, saveData, clearData, mergeUrls, type SavedData } from '@/lib/storage';
 
+// プロジェクトデータをGitHubに同期（バックグラウンド、失敗してもUIに影響なし）
+function syncToGitHub(data: SavedData) {
+  fetch('/api/export', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ projects: data.projects }),
+  }).catch(() => { /* sync failure is non-critical */ });
+}
+
+// URLスラッグからローカルフォルダパスを推測（Netlify等でサーバーがファイルシステムにアクセスできない場合のフォールバック）
+function guessLocalFolder(urls: string[]): string | null {
+  for (const url of urls) {
+    try {
+      const u = new URL(url);
+      // Netlify: xxx-app.netlify.app → ~/Desktop/xxx
+      if (u.hostname.endsWith('.netlify.app')) {
+        const slug = u.hostname.replace('.netlify.app', '');
+        // -app, -site, -web などの共通サフィックスを除去
+        const cleaned = slug.replace(/-(app|site|web)$/, '');
+        if (cleaned.length >= 2) return `~/Desktop/${cleaned}`;
+      }
+      // GitHub Pages: user.github.io/repo → ~/Desktop/repo
+      if (u.hostname.endsWith('.github.io') && u.pathname.length > 1) {
+        const repo = u.pathname.split('/').filter(Boolean)[0];
+        if (repo) return `~/Desktop/${repo}`;
+      }
+      // GitHub: github.com/user/repo → ~/Desktop/repo
+      if (u.hostname === 'github.com') {
+        const parts = u.pathname.split('/').filter(Boolean);
+        if (parts.length >= 2) return `~/Desktop/${parts[1]}`;
+      }
+      // Vercel: xxx.vercel.app → ~/Desktop/xxx
+      if (u.hostname.endsWith('.vercel.app')) {
+        const slug = u.hostname.replace('.vercel.app', '');
+        const cleaned = slug.replace(/-(app|site|web)$/, '');
+        if (cleaned.length >= 2) return `~/Desktop/${cleaned}`;
+      }
+    } catch { /* skip */ }
+  }
+  return null;
+}
+
 export default function Home() {
   const [saved, setSaved] = useState<SavedData | null>(null);
   const [loading, setLoading] = useState(false);
@@ -80,9 +122,25 @@ export default function Home() {
     })
       .then(res => res.json())
       .then(({ matches }) => {
-        if (!matches || Object.keys(matches).length === 0) return;
+        // サーバー側マッチング結果を適用
+        let serverMatches = matches || {};
+
+        // サーバー側で結果0件の場合（Netlify等でファイルシステムアクセス不可）、
+        // URLスラッグからフォルダパスを推測するフォールバック
+        if (Object.keys(serverMatches).length === 0) {
+          const heuristicMatches: Record<number, string> = {};
+          for (let i = 0; i < saved.projects.length; i++) {
+            const p = saved.projects[i];
+            if (p.localFolder) continue;
+            const guessed = guessLocalFolder(p.urls?.map(u => u.url) || []);
+            if (guessed) heuristicMatches[i] = guessed;
+          }
+          serverMatches = heuristicMatches;
+        }
+
+        if (Object.keys(serverMatches).length === 0) return;
         const newProjects = saved.projects.map((p, i) =>
-          matches[i] ? { ...p, localFolder: matches[i] } : p
+          serverMatches[i] ? { ...p, localFolder: serverMatches[i] } : p
         );
         const newSaved = { ...saved, projects: newProjects };
         saveData(newSaved);
@@ -121,6 +179,7 @@ export default function Home() {
         };
         saveData(newSaved);
         setSaved(newSaved);
+        syncToGitHub(newSaved);
         setUrls('');
         setShowAddForm(false);
       }
@@ -135,6 +194,7 @@ export default function Home() {
     if (confirm('保存済みのプロジェクトデータを全て削除しますか？')) {
       clearData();
       setSaved(null);
+      syncToGitHub({ projects: [], ungrouped: [], lastUpdated: '', allUrls: [] });
     }
   }
 
@@ -152,6 +212,7 @@ export default function Home() {
     };
     saveData(newSaved);
     setSaved(newSaved);
+    syncToGitHub(newSaved);
   }
 
   function handlePromoteUngrouped(url: string) {
@@ -177,6 +238,7 @@ export default function Home() {
     };
     saveData(newSaved);
     setSaved(newSaved);
+    syncToGitHub(newSaved);
   }
 
   function handleAddLocalProject() {
@@ -202,6 +264,7 @@ export default function Home() {
     };
     saveData(newSaved);
     setSaved(newSaved);
+    syncToGitHub(newSaved);
   }
 
   function handleLocalFolderChange(index: number, folder: string) {
