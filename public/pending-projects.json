@@ -472,5 +472,23 @@
       "Frontend (JavaScript Framework)",
       "Netlify"
     ]
+  },
+  {
+    "projectName": "会員伴走アプリ",
+    "description": "ジム会員の90日間の身体変化を一緒に見ていく伴走アプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/member-companion-app",
+        "role": "ソースコード"
+      }
+    ],
+    "reasoning": "手動登録（未デプロイのローカル開発プロジェクト）",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/code/260503会員伴走アプリ"
   }
 ]
