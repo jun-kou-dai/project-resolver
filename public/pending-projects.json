@@ -390,7 +390,7 @@
       "AI",
       "音声認識"
     ],
-    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/voice-memo"
+    "localFolder": "~/code/_アーカイブ/260203voice-memo/voice-memo (current)"
   },
   {
     "projectName": "Knowledge Base",
@@ -519,21 +519,17 @@
     "description": "ジム会員の90日間の身体変化を一緒に見ていく伴走アプリ。",
     "urls": [
       {
-        "url": "https://github.com/jun-kou-dai/companion-demo",
+        "url": "https://github.com/jun-kou-dai/member-companion-app",
         "role": "ソースコード"
-      },
-      {
-        "url": "https://companion-demo.vercel.app",
-        "role": "デプロイ先"
       }
     ],
-    "reasoning": "GitHubリポジトリ(companion-demo)とVercel公開デモが対応。",
+    "reasoning": "手動登録（未デプロイのローカル開発プロジェクト）",
     "confidence": "high",
     "status": "developing",
     "techStack": [
       "TypeScript",
       "Next.js"
     ],
-    "localFolder": "~/code/ジム3部作/companion-demo"
+    "localFolder": "~/code/_アーカイブ/260503会員伴走アプリ"
   }
 ]
