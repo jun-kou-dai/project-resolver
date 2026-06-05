@@ -19,7 +19,7 @@
       "TypeScript",
       "Next.js"
     ],
-    "localFolder": "~/Desktop/project-resolver"
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/project-resolver"
   },
   {
     "projectName": "Kotoba App (ことばの おべんきょう)",
@@ -41,7 +41,7 @@
       "TypeScript",
       "Next.js"
     ],
-    "localFolder": "~/Desktop/kotoba-app"
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/kotoba-app"
   },
   {
     "projectName": "Kodomo Zukan (こども動物図鑑)",
@@ -63,7 +63,7 @@
       "TypeScript",
       "Next.js"
     ],
-    "localFolder": "~/Desktop/kodomo-zukan"
+    "localFolder": "~/code/kodomo-zukan"
   },
   {
     "projectName": "Memories - 子供の成長記録",
@@ -82,7 +82,7 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
-      "Web Application"
+      "HTML"
     ],
     "localFolder": "~/code/260131 kids 4"
   },
@@ -105,7 +105,7 @@
     "techStack": [
       "HTML"
     ],
-    "localFolder": "~/Desktop/asa-check"
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/asa-check"
   },
   {
     "projectName": "AI Auto Scheduler",
@@ -128,9 +128,11 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
+      "Expo",
+      "React Native",
       "TypeScript"
     ],
-    "localFolder": "~/Desktop/ai-auto-scheduler"
+    "localFolder": "~/Documents/プロジェクト/AIスケジューラー/ai-auto-scheduler"
   },
   {
     "projectName": "Onsei / EarFlow (耳で読むニュース)",
@@ -149,9 +151,11 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
-      "JavaScript"
+      "React",
+      "Vite",
+      "TypeScript"
     ],
-    "localFolder": "~/Desktop/onsei"
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/onsei-earflow"
   },
   {
     "projectName": "Nano Storybook",
@@ -170,9 +174,11 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
-      "JavaScript"
+      "HTML",
+      "JavaScript",
+      "Gemini API"
     ],
-    "localFolder": "~/Desktop/nano-storybook"
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/nano-storybook"
   },
   {
     "projectName": "VibeMochi (もちもちモチ)",
@@ -186,8 +192,10 @@
     "reasoning": "Netlifyサイトのタイトル「もちもちモチ」と一致。",
     "confidence": "high",
     "status": "active",
-    "techStack": [],
-    "localFolder": "~/Desktop/vibemochi"
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/vibemochi"
   },
   {
     "projectName": "Kyoku Gacha (今日の一曲ガチャ)",
@@ -202,9 +210,10 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
+      "HTML",
       "PWA"
     ],
-    "localFolder": "~/Desktop/kyoku-gacha"
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/kyoku-gacha"
   },
   {
     "projectName": "Osoto Tenki (おそと天気)",
@@ -218,8 +227,12 @@
     "reasoning": "Netlifyサイトのタイトルと一致。",
     "confidence": "high",
     "status": "active",
-    "techStack": [],
-    "localFolder": "~/Desktop/osoto-tenki"
+    "techStack": [
+      "JavaScript",
+      "Web Push",
+      "Netlify"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/osoto-tenki"
   },
   {
     "projectName": "Kodomo Park (子どもとおでかけ公園マップ)",
@@ -233,8 +246,10 @@
     "reasoning": "Netlifyサイトのタイトルと一致。",
     "confidence": "high",
     "status": "active",
-    "techStack": [],
-    "localFolder": "~/Desktop/kodomo-park"
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/kodomo-park"
   },
   {
     "projectName": "Ima Yatteru? (今やってる？ - 営業中のお店マップ)",
@@ -248,8 +263,10 @@
     "reasoning": "Netlifyサイトのタイトルと一致。",
     "confidence": "high",
     "status": "active",
-    "techStack": [],
-    "localFolder": "~/Desktop/ima-yatteru"
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/ima-yatteru"
   },
   {
     "projectName": "Toilet Finder JP (今すぐトイレ)",
@@ -263,8 +280,10 @@
     "reasoning": "Netlifyサイトのタイトルと一致。",
     "confidence": "high",
     "status": "active",
-    "techStack": [],
-    "localFolder": "~/Desktop/toilet-finder"
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/toilet-finder"
   },
   {
     "projectName": "Tubuyaki (つぶやき)",
@@ -286,7 +305,7 @@
       "TypeScript",
       "Next.js"
     ],
-    "localFolder": "~/Desktop/tubuyaki"
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/tubuyaki"
   },
   {
     "projectName": "AI Sukejuru (AIスケジューラー)",
@@ -305,10 +324,11 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
-      "TypeScript",
-      "AI"
+      "Expo",
+      "React Native",
+      "TypeScript"
     ],
-    "localFolder": "~/Desktop/ai-sukejuru"
+    "localFolder": "~/Documents/プロジェクト/AIスケジューラー/ai-sukejuru"
   },
   {
     "projectName": "Memo no Maryoku (武器メモ / 次の一手メーカー)",
@@ -327,10 +347,10 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
-      "JavaScript",
+      "Vite",
       "Gemini API"
     ],
-    "localFolder": "~/Desktop/memonomaryoku"
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/memonomaryoku"
   },
   {
     "projectName": "会員管理システム",
@@ -344,8 +364,10 @@
     "reasoning": "Netlifyサイトのタイトル「会員管理システム v3.0」と一致。",
     "confidence": "high",
     "status": "active",
-    "techStack": [],
-    "localFolder": "~/code/260204会員管理"
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/code/ジム3部作/260204会員管理"
   },
   {
     "projectName": "音声メモ (Grok対応版含む)",
@@ -364,10 +386,11 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
+      "HTML",
       "AI",
       "音声認識"
     ],
-    "localFolder": "~/code/260203voice-memo"
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/voice-memo"
   },
   {
     "projectName": "Knowledge Base",
@@ -381,7 +404,9 @@
     "reasoning": "URLパスに「knowledge-base」が含まれる。",
     "confidence": "high",
     "status": "stopped",
-    "techStack": [],
+    "techStack": [
+      "HTML"
+    ],
     "localFolder": "~/code/260206ナレッジベース"
   },
   {
@@ -396,23 +421,31 @@
     "reasoning": "Netlifyサイトのタイトル「My Memo」と一致。",
     "confidence": "high",
     "status": "active",
-    "techStack": [],
-    "localFolder": "~/code/260205memo"
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/my-memo-final"
   },
   {
     "projectName": "Gym Phone App",
     "description": "ジムでの電話記録管理アプリ。",
     "urls": [
       {
-        "url": "file:///Users/kajiyamajunichi/Desktop/gym-phone-app/index.html",
-        "role": "ローカルファイル"
+        "url": "https://github.com/jun-kou-dai/gym-phone-app",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://gym-phone-app.vercel.app",
+        "role": "デプロイ先"
       }
     ],
-    "reasoning": "手動登録（ローカルプロジェクト）",
+    "reasoning": "GitHubリポジトリとVercelデプロイ先が対応。",
     "confidence": "high",
-    "status": "stopped",
-    "techStack": [],
-    "localFolder": "~/Desktop/gym-phone-app"
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/code/ジム3部作/gym-phone-app"
   },
   {
     "projectName": "ClipStock",
@@ -421,7 +454,10 @@
     "reasoning": "手動登録（ローカルプロジェクト）",
     "confidence": "high",
     "status": "developing",
-    "localFolder": "~/Desktop/clipstock_v2"
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/clipstock_v2",
+    "techStack": [
+      "Electron"
+    ]
   },
   {
     "projectName": "てあそびうた",
@@ -435,8 +471,11 @@
     "reasoning": "Netlifyサイトのタイトルと一致。",
     "confidence": "high",
     "status": "active",
-    "techStack": [],
-    "localFolder": "~/Desktop/teasobi-uta"
+    "techStack": [
+      "Expo",
+      "React Native"
+    ],
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/teasobi-uta"
   },
   {
     "projectName": "むにゃむにゃお返事おもちゃ",
@@ -451,10 +490,11 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
+      "HTML",
       "Web Audio API",
       "Gemini API"
     ],
-    "localFolder": "~/Desktop/munya-munya"
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/munya-munya"
   },
   {
     "projectName": "なきごえへんしん",
@@ -469,26 +509,31 @@
     "confidence": "high",
     "status": "active",
     "techStack": [
-      "Frontend (JavaScript Framework)",
-      "Netlify"
-    ]
+      "HTML",
+      "Web Audio API"
+    ],
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/nakigoe-henshin"
   },
   {
     "projectName": "会員伴走アプリ",
     "description": "ジム会員の90日間の身体変化を一緒に見ていく伴走アプリ。",
     "urls": [
       {
-        "url": "https://github.com/jun-kou-dai/member-companion-app",
+        "url": "https://github.com/jun-kou-dai/companion-demo",
         "role": "ソースコード"
+      },
+      {
+        "url": "https://companion-demo.vercel.app",
+        "role": "デプロイ先"
       }
     ],
-    "reasoning": "手動登録（未デプロイのローカル開発プロジェクト）",
+    "reasoning": "GitHubリポジトリ(companion-demo)とVercel公開デモが対応。",
     "confidence": "high",
     "status": "developing",
     "techStack": [
       "TypeScript",
       "Next.js"
     ],
-    "localFolder": "~/code/260503会員伴走アプリ"
+    "localFolder": "~/code/ジム3部作/companion-demo"
   }
 ]
