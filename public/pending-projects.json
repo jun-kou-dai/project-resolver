@@ -531,5 +531,24 @@
       "Next.js"
     ],
     "localFolder": "~/code/_アーカイブ/260503会員伴走アプリ"
+  },
+  {
+    "projectName": "たすかるマップ (佐賀の子連れマップ)",
+    "description": "佐賀の子連れの親向けマップ。「今やってる×近い」で、子どもと入れる店・こどもの病院・トイレ・休憩を探せる。Google Placesで営業中を判定。",
+    "urls": [
+      {
+        "url": "https://tasukaru-map.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル「たすかるマップ」と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "Leaflet",
+      "Google Places API"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/tasukaru-map"
   }
 ]
