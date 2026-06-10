@@ -550,5 +550,17 @@
       "Google Places API"
     ],
     "localFolder": "~/Documents/プロジェクト/ユーティリティ/tasukaru-map"
+  },
+  {
+    "projectName": "おちあう (Ochiau)",
+    "description": "一緒に出かける2人が、落ち合うまでの間だけお互いの位置を共有できるアプリ。P2P(PeerJS)で直接つなぎ、用が済んだら消すだけ。",
+    "urls": [
+      { "url": "https://ochiau-jp.netlify.app", "role": "デプロイ先" }
+    ],
+    "reasoning": "Netlifyサイトのタイトル「おちあう」と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [ "HTML", "Leaflet", "PeerJS" ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/ochiau"
   }
 ]
