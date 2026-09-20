@@ -8,11 +8,15 @@
         "role": "ソースコード"
       },
       {
+        "url": "https://github.com/jun-kou-dai/aoi-no-yusha-dev",
+        "role": "開発本体(private)"
+      },
+      {
         "url": "https://jun-kou-dai.github.io/aoi-no-yusha/",
         "role": "デプロイ先"
       }
     ],
-    "reasoning": "開発本体は ~/code/260611（1234コミット）。配信用に ~/code/aoi-no-yusha（522コミット）へ書き出しGitHub Pagesで公開。~/Desktop/260611 は同じHEADの別コピー。現在の開発はこちらではなく「蒼の勇者 — Azure Edition」へ移っており、ChatGPT Codexのworktree ~/.codex/worktrees/9e37/260611 で進行中。手持ちで最大規模。 複製が4つある: ~/code/aoi-no-yusha(522コミット・配信用)、~/Desktop/260611(同一HEADの別コピー)、~/.codex/worktrees/9e37/260611(Codexの作業worktree)、~/Desktop/260611/.claude/worktrees/trusting-lovelace-0dc9c8(577コミット・2026-07-22で止まった枝・8.8MB)。",
+    "reasoning": "開発本体は ~/code/260611（1234コミット）。配信用に ~/code/aoi-no-yusha（522コミット）へ書き出しGitHub Pagesで公開。~/Desktop/260611 は同じHEADの別コピー。現在の開発はこちらではなく「蒼の勇者 — Azure Edition」へ移っており、ChatGPT Codexのworktree ~/.codex/worktrees/9e37/260611 で進行中。手持ちで最大規模。 複製が4つある: ~/code/aoi-no-yusha(522コミット・配信用)、~/Desktop/260611(同一HEADの別コピー)、~/.codex/worktrees/9e37/260611(Codexの作業worktree)、~/Desktop/260611/.claude/worktrees/trusting-lovelace-0dc9c8(577コミット・2026-07-22で止まった枝・8.8MB)。 2026-09-21、開発本体1234コミットがリモート未設定だったため github.com/jun-kou-dai/aoi-no-yusha-dev (private) を作成してpush。HEAD b2464b27 が一致。配信用の aoi-no-yusha とは別系統で、互いのコミットを含まない。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -31,7 +35,7 @@
       "ok": true
     },
     "activityScore": 92,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "蒼の勇者 — Azure Edition",
@@ -67,7 +71,7 @@
       "note": "本人限定（要ログイン）"
     },
     "activityScore": 86,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "ジムSaaS 本番D1バックアップ",
@@ -92,7 +96,7 @@
     "recentCommits": 28,
     "dateSource": "git",
     "activityScore": 85,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "会員伴走アプリ",
@@ -127,7 +131,7 @@
       "ok": true
     },
     "activityScore": 84,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "ジム会員管理SaaS (gym-saas)",
@@ -161,7 +165,40 @@
       "ok": true
     },
     "activityScore": 83,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
+  },
+  {
+    "projectName": "Project Resolver",
+    "description": "複数のURLをAIが自動でプロジェクトごとにグループ化するツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/project-resolver",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://project-resolver-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名とNetlifyデプロイ先URLが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/project-resolver",
+    "lastUpdated": "2026-09-21T08:22:08+09:00",
+    "commitCount": 32,
+    "recentCommits": 11,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://project-resolver-app.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 80,
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Gym Phone App",
@@ -195,40 +232,7 @@
       "ok": true
     },
     "activityScore": 79,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
-  },
-  {
-    "projectName": "Project Resolver",
-    "description": "複数のURLをAIが自動でプロジェクトごとにグループ化するツール。",
-    "urls": [
-      {
-        "url": "https://github.com/jun-kou-dai/project-resolver",
-        "role": "ソースコード"
-      },
-      {
-        "url": "https://project-resolver-app.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "GitHubリポジトリ名とNetlifyデプロイ先URLが一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "TypeScript",
-      "Next.js"
-    ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/project-resolver",
-    "lastUpdated": "2026-09-21T08:08:09+09:00",
-    "commitCount": 31,
-    "recentCommits": 10,
-    "dateSource": "git",
-    "liveStatus": {
-      "url": "https://project-resolver-app.netlify.app",
-      "code": 200,
-      "ok": true
-    },
-    "activityScore": 79,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "会員管理システム",
@@ -266,7 +270,7 @@
       "ok": true
     },
     "activityScore": 70,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Second Brain",
@@ -286,7 +290,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 68,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "復旧した旧Netlifyサイト 7件",
@@ -340,18 +344,22 @@
       "ok": true
     },
     "activityScore": 68,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "蒼の勇者RPG（Roblox版）",
     "description": "Roblox 上で動くドラクエ1風RPG。ブラウザ版とは別実装で、実プレイヤーは作者の息子。",
     "urls": [
       {
+        "url": "https://github.com/jun-kou-dai/aoi-roblox",
+        "role": "ソースコード(private)"
+      },
+      {
         "url": "https://www.roblox.com/games/138207926698309/",
         "role": "デプロイ先(Roblox)"
       }
     ],
-    "reasoning": "README に PlaceId 138207926698309 / GameId 10347126984 と記載。コードの正典は aoi_rpg_world.luau でクラウド本体とバイト一致。",
+    "reasoning": "README に PlaceId 138207926698309 / GameId 10347126984 と記載。コードの正典は aoi_rpg_world.luau でクラウド本体とバイト一致。 2026-09-21、リモート未設定だったため github.com/jun-kou-dai/aoi-roblox (private) を作成してpush。HEAD cbd617ad・119コミットが一致。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -369,7 +377,7 @@
       "ok": true
     },
     "activityScore": 66,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: chat-handoff",
@@ -387,7 +395,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 54,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "AIスキル図鑑",
@@ -407,7 +415,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 51,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: hajimete-no-skill",
@@ -425,7 +433,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 51,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: ai-manga-creator",
@@ -444,7 +452,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 50,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "むなかた制作ツール 7本",
@@ -463,7 +471,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 50,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "AIオフィス（教材）",
@@ -483,7 +491,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 49,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: 4ch-pipeline",
@@ -501,7 +509,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 48,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: 軍配（pro-marketing-director）",
@@ -519,7 +527,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 48,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: note-article-writer",
@@ -537,7 +545,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 48,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: x-long-post",
@@ -555,7 +563,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 48,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: x-reply",
@@ -573,7 +581,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 48,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: skill-maker",
@@ -591,7 +599,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 46,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "蒼の勇者 作業版（codex1 pro）",
@@ -610,7 +618,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 43,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Kotoba App (ことばの おべんきょう)",
@@ -643,7 +651,7 @@
       "ok": true
     },
     "activityScore": 39,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Kodomo Zukan (こども動物図鑑)",
@@ -676,7 +684,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Nano Storybook",
@@ -710,7 +718,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "おちあう (Ochiau)",
@@ -740,7 +748,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "たすかるマップ (佐賀の子連れマップ)",
@@ -770,7 +778,7 @@
       "ok": true
     },
     "activityScore": 33,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "てあそびうた",
@@ -799,7 +807,7 @@
       "ok": true
     },
     "activityScore": 32,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "なきごえへんしん",
@@ -828,7 +836,7 @@
       "ok": true
     },
     "activityScore": 32,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "VibeMochi (もちもちモチ)",
@@ -856,7 +864,7 @@
       "ok": true
     },
     "activityScore": 31,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "むにゃむにゃお返事おもちゃ",
@@ -886,7 +894,7 @@
       "ok": true
     },
     "activityScore": 31,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: creating-diagrams",
@@ -904,7 +912,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 31,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "音声メモ (Grok対応版含む)",
@@ -938,7 +946,7 @@
       "ok": true
     },
     "activityScore": 30,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Onsei / EarFlow (耳で読むニュース)",
@@ -972,7 +980,7 @@
       "ok": true
     },
     "activityScore": 29,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "AI Auto Scheduler",
@@ -1010,7 +1018,7 @@
       "ok": true
     },
     "activityScore": 27,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Memories - 子供の成長記録",
@@ -1060,7 +1068,7 @@
       "ok": true
     },
     "activityScore": 27,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: Fujin AI",
@@ -1078,7 +1086,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 27,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: 西野亮廣相談bot",
@@ -1096,7 +1104,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 26,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "AI Sukejuru (AIスケジューラー)",
@@ -1130,7 +1138,7 @@
       "ok": true
     },
     "activityScore": 26,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "商品デモ制作キット",
@@ -1148,7 +1156,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 26,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スキル: アドラー人生相談",
@@ -1166,7 +1174,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 26,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "業務管理アプリ（チーム管理システム v2）",
@@ -1186,7 +1194,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 25,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Asa-check (朝チェック共有ツール)",
@@ -1218,7 +1226,7 @@
       "ok": true
     },
     "activityScore": 23,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "MulmoClaude 作業データ",
@@ -1237,7 +1245,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 23,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "会員伴走アプリ（旧試作 member-companion-app）",
@@ -1261,7 +1269,7 @@
     "recentCommits": 0,
     "dateSource": "git",
     "activityScore": 23,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "定期実行スキル 3本",
@@ -1279,7 +1287,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 22,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Memo no Maryoku (武器メモ / 次の一手メーカー)",
@@ -1312,7 +1320,7 @@
       "ok": true
     },
     "activityScore": 21,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Kyoku Gacha (今日の一曲ガチャ)",
@@ -1341,7 +1349,7 @@
       "ok": true
     },
     "activityScore": 20,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Toilet Finder JP (今すぐトイレ)",
@@ -1369,7 +1377,7 @@
       "ok": true
     },
     "activityScore": 20,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Tubuyaki (つぶやき)",
@@ -1402,7 +1410,7 @@
       "ok": true
     },
     "activityScore": 20,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "まほうのもりタッチ",
@@ -1422,7 +1430,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 20,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "bilingual-app",
@@ -1438,7 +1446,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 20,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "ClipStock",
@@ -1456,7 +1464,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 19,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Osoto Tenki (おそと天気)",
@@ -1486,7 +1494,7 @@
       "ok": true
     },
     "activityScore": 19,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "viberealm",
@@ -1505,7 +1513,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 19,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "command-post",
@@ -1524,7 +1532,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 19,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "quickvibe",
@@ -1542,7 +1550,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 19,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Kodomo Park (子どもとおでかけ公園マップ)",
@@ -1570,7 +1578,7 @@
       "ok": true
     },
     "activityScore": 18,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Ima Yatteru? (今やってる？ - 営業中のお店マップ)",
@@ -1598,7 +1606,7 @@
       "ok": true
     },
     "activityScore": 18,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "EarFlow（2nd-Brain版）",
@@ -1618,7 +1626,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 18,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "260220kids / 260209文字起こしgrok",
@@ -1636,7 +1644,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 18,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "My Memo",
@@ -1676,7 +1684,7 @@
       "ok": true
     },
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "note分析ダッシュボード",
@@ -1695,7 +1703,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "My Memo（Supabase版）",
@@ -1714,7 +1722,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "My Memo（アプリ版）",
@@ -1732,7 +1740,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "voice-memo（Documents側）",
@@ -1750,7 +1758,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "ポモドーロタイマー",
@@ -1769,7 +1777,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "議事録アプリ",
@@ -1788,7 +1796,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "ビックリマン育児アプリ",
@@ -1807,7 +1815,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "子ども日課ゲーミフィケーション",
@@ -1826,7 +1834,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "ドキュメント管理ツール",
@@ -1844,7 +1852,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "メモアプリ（memo-app）",
@@ -1863,7 +1871,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "ノートテイカー",
@@ -1882,7 +1890,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "memo.html",
@@ -1900,7 +1908,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "My Memo（単一HTML版）",
@@ -1918,7 +1926,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "my-first-project（初めてのクロードコード）",
@@ -1944,7 +1952,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "SystemV5 App",
@@ -1964,7 +1972,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 16,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "会員管理システム（旧バックアップ）",
@@ -1994,7 +2002,7 @@
       "ok": true
     },
     "activityScore": 16,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "日数計算",
@@ -2040,7 +2048,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "生年月日ユーティリティ",
@@ -2078,7 +2086,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "スマート飲み会 会費計算",
@@ -2112,7 +2120,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "あなたの人生の物語（ライフタイムライン）",
@@ -2146,7 +2154,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "インタラクティブカレンダー",
@@ -2180,7 +2188,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "パーソナル健康分析レポート",
@@ -2214,7 +2222,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "血圧チェッカー",
@@ -2244,7 +2252,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Time Duration Calculator",
@@ -2274,7 +2282,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "QRコード生成ツール",
@@ -2304,7 +2312,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Personal Dashboard",
@@ -2334,7 +2342,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "My Creative Portfolio",
@@ -2380,7 +2388,7 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "ワールドウィング久留米 サイト",
@@ -2414,7 +2422,7 @@
       "ok": true
     },
     "activityScore": 9,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "pomodoro-timer（空リポジトリ）",
@@ -2436,7 +2444,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 9,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   },
   {
     "projectName": "Knowledge Base",
@@ -2459,6 +2467,6 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 0,
-    "checkedAt": "2026-09-20T23:21:21.662Z"
+    "checkedAt": "2026-09-20T23:26:50.473Z"
   }
 ]
