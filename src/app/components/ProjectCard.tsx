@@ -21,7 +21,7 @@ interface ProjectCardProps {
   noLocalSource?: boolean;
   // scripts/refresh-activity.mjs が実測した値
   lastUpdated?: string | null;
-  dateSource?: 'git' | 'file' | 'deploy' | 'none';
+  dateSource?: 'git' | 'file' | 'deploy' | 'remote' | 'none';
   commitCount?: number;
   recentCommits?: number;
   activityScore?: number;
@@ -90,6 +90,7 @@ const dateSourceNote: Record<string, string> = {
   git: '最終コミット日',
   file: 'ソースファイルの更新日時（gitの記録がないため）',
   deploy: '公開先の最終公開日（ソースが手元に残っていないため）',
+  remote: 'GitHubの最終push日（ローカルにクローンが無いため）',
   none: 'ローカルフォルダが見つからない',
 };
 
@@ -153,6 +154,11 @@ export function ProjectCard({
             {dateSource === 'file' && (
               <span className="text-xs text-gray-400" title="gitの記録がないため、ソースファイルの更新日時を使っています">
                 ※ファイル日時から推定
+              </span>
+            )}
+            {dateSource === 'remote' && (
+              <span className="text-xs text-orange-500" title="ローカルにクローンが無いため、GitHubの最終push日を使っています">
+                ※GitHubのpush日から（ローカル未クローン）
               </span>
             )}
             {dateSource === 'deploy' && (

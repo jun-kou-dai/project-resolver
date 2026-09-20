@@ -83,6 +83,22 @@ function newestSourceFile(dir, budget = { n: 20000 }) {
   return newest ? new Date(newest).toISOString() : null;
 }
 
+/** ローカルにクローンが無いとき用。GitHub の最終push日を引く（gh が無ければ諦める） */
+function githubPushedAt(urls = []) {
+  const u = urls.find((x) => /^https:\/\/github\.com\/[^/]+\/[^/]+/.test(x.url));
+  if (!u) return null;
+  const m = u.url.match(/^https:\/\/github\.com\/([^/]+)\/([^/#?]+)/);
+  if (!m) return null;
+  const repo = `${m[1]}/${m[2].replace(/\.git$/, '')}`;
+  try {
+    const out = execFileSync('gh', ['repo', 'view', repo, '--json', 'pushedAt', '-q', '.pushedAt'],
+      { encoding: 'utf8', timeout: 25000, stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    return out || null;
+  } catch {
+    return null; // gh が無い・未認証・privateで見えない
+  }
+}
+
 /** そのプロジェクトの「公開先」にあたる URL を1つ選ぶ（GitHub のリポジトリページは除く） */
 function primaryDeployUrl(urls = []) {
   const live = urls.filter((u) => u.url.startsWith('http') && !/^https:\/\/github\.com\//.test(u.url));
@@ -136,7 +152,7 @@ function activityScore({ lastUpdated, commitCount, recentCommits, dateSource }) 
 async function main() {
   const projects = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
   const checkedAt = new Date().toISOString();
-  let gitCount = 0, fileCount = 0, deployCount = 0, noneCount = 0, downCount = 0;
+  let gitCount = 0, fileCount = 0, deployCount = 0, remoteCount = 0, noneCount = 0, downCount = 0;
 
   for (const p of projects) {
     for (const k of COMPUTED) delete p[k];
@@ -163,6 +179,13 @@ async function main() {
         p.recentCommits = 0;
         if (f) fileCount++; else noneCount++;
       }
+    } else if (githubPushedAt(p.urls)) {
+      // ローカルにクローンが無いリポジトリ。GitHub の最終push日を最終開発日として扱う
+      p.lastUpdated = githubPushedAt(p.urls);
+      p.dateSource = 'remote';
+      p.commitCount = 0;
+      p.recentCommits = 0;
+      remoteCount++;
     } else if (p.deployedAt) {
       // ソースが手元に無く、公開サイトだけ残っているもの。公開日を最終開発日として扱う
       p.lastUpdated = p.deployedAt;
@@ -196,7 +219,7 @@ async function main() {
   projects.sort((a, b) => (b.activityScore ?? 0) - (a.activityScore ?? 0));
   fs.writeFileSync(DATA_FILE, JSON.stringify(projects, null, 2) + '\n', 'utf8');
 
-  console.log(`\n${projects.length}件を更新しました（git:${gitCount} / ファイル日付:${fileCount} / 公開日:${deployCount} / 不明:${noneCount}）`);
+  console.log(`\n${projects.length}件を更新しました（git:${gitCount} / ファイル日付:${fileCount} / 公開日:${deployCount} / GitHub:${remoteCount} / 不明:${noneCount}）`);
   if (downCount > 0) console.log(`⚠ 公開先が応答しないものが ${downCount}件あります`);
 }
 
