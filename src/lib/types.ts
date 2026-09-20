@@ -38,9 +38,23 @@ export const ProjectGrouping = z.object({
   })),
   reasoning: z.string().describe('この案件にまとめた根拠'),
   confidence: z.enum(['high', 'medium', 'low']).describe('確信度: high=確定, medium=有力候補, low=保留'),
-  status: z.enum(['active', 'developing', 'prototype', 'stopped', 'unknown']).describe('状態推定: active=公開中, developing=開発中, prototype=試作中, stopped=停止中, unknown=不明'),
+  status: z.enum(['active', 'developing', 'prototype', 'stopped', 'lost', 'unknown']).describe('状態推定: active=公開中, developing=開発中, prototype=試作中, stopped=停止中, lost=消滅（実体なし）, unknown=不明'),
   techStack: z.array(z.string()).optional().describe('推定される技術スタック'),
   localFolder: z.string().optional().describe('対応するローカルフォルダのパスまたは名前（推定）'),
+
+  // === ここから下は scripts/refresh-activity.mjs が実測して書き込む。AIは推定しない ===
+  lastUpdated: z.string().nullable().optional().describe('最終開発日（ISO8601）'),
+  dateSource: z.enum(['git', 'file', 'none']).optional().describe('最終開発日の根拠: git=最終コミット日, file=ソースの更新日時, none=ローカル不明'),
+  commitCount: z.number().optional().describe('累計コミット数（gitのときのみ）'),
+  recentCommits: z.number().optional().describe('直近90日のコミット数'),
+  activityScore: z.number().optional().describe('活発さ 0-100（新しさ6割＋開発量4割）'),
+  liveStatus: z.object({
+    url: z.string(),
+    code: z.number(),
+    ok: z.boolean(),
+    reason: z.string().optional(),
+  }).optional().describe('公開先の疎通結果'),
+  checkedAt: z.string().optional().describe('実測した日時（ISO8601）'),
 });
 export type ProjectGrouping = z.infer<typeof ProjectGrouping>;
 

@@ -1,25 +1,209 @@
 [
   {
-    "projectName": "Project Resolver",
-    "description": "複数のURLをAIが自動でプロジェクトごとにグループ化するツール。",
+    "projectName": "蒼の勇者（ブラウザRPG）",
+    "description": "ドラクエ1風の自作ブラウザRPG。二十一の章、八つの島、百九のまもの。息子が実際に遊んでいる。",
     "urls": [
       {
-        "url": "https://github.com/jun-kou-dai/project-resolver",
+        "url": "https://github.com/jun-kou-dai/aoi-no-yusha",
         "role": "ソースコード"
       },
       {
-        "url": "https://project-resolver-app.netlify.app",
+        "url": "https://jun-kou-dai.github.io/aoi-no-yusha/",
         "role": "デプロイ先"
       }
     ],
-    "reasoning": "GitHubリポジトリ名とNetlifyデプロイ先URLが一致。",
+    "reasoning": "開発本体は ~/code/260611（1234コミット）。配信用に ~/code/aoi-no-yusha（522コミット）へ書き出し、GitHub Pages で公開している。手持ちで最大規模の開発。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "JavaScript",
+      "単一HTML"
+    ],
+    "localFolder": "~/code/260611",
+    "lastUpdated": "2026-09-06T20:23:30+09:00",
+    "commitCount": 1234,
+    "recentCommits": 1177,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://jun-kou-dai.github.io/aoi-no-yusha/",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 93,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "会員伴走アプリ",
+    "description": "シニア向けジムの会員伴走アプリ。60〜80代の会員が運動・身体・生活を記録し、スタッフが伴走する。依頼者が実際に週3回使用中。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/companion-demo",
+        "role": "ソースコード(private)"
+      },
+      {
+        "url": "https://companion-demo.vercel.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "READMEに「デモではなく本番。依頼者本人が携帯から週3回使用」と明記。旧試作 ~/code/_アーカイブ/260503会員伴走アプリ (member-companion-app・2コミット) から移行済み。",
     "confidence": "high",
     "status": "active",
     "techStack": [
       "TypeScript",
-      "Next.js"
+      "Next.js",
+      "Cloudflare D1",
+      "Vercel"
     ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/project-resolver"
+    "localFolder": "~/code/ジム3部作/companion-demo",
+    "lastUpdated": "2026-09-05T06:29:25+09:00",
+    "commitCount": 174,
+    "recentCommits": 62,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://companion-demo.vercel.app",
+      "code": 503,
+      "ok": false,
+      "reason": "DEPLOYMENT_PAUSED"
+    },
+    "activityScore": 85,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "ジム会員管理SaaS (gym-saas)",
+    "description": "スポーツジム向けの会員管理SaaS。4つのアプリがひとつの保存先（Cloudflare D1）を共有する。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/gym-saas",
+        "role": "ソースコード(private)"
+      },
+      {
+        "url": "https://gym-saas.worldwingkurume.workers.dev",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "README に「Cloudflare Workers + D1、フレームワークなし」と明記。会員管理システム・Gym Phone App・会員伴走アプリと D1 を共有する中核。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Cloudflare Workers",
+      "D1",
+      "JavaScript"
+    ],
+    "localFolder": "~/code/260812Webアプリ制作の教科書/gym-saas",
+    "lastUpdated": "2026-09-05T13:06:15+09:00",
+    "commitCount": 115,
+    "recentCommits": 115,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://gym-saas.worldwingkurume.workers.dev",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 83,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "Gym Phone App",
+    "description": "ジムでの電話記録管理アプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/gym-phone-app",
+        "role": "ソースコード(private)"
+      },
+      {
+        "url": "https://gym-phone-app.vercel.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "ジム3部作のひとつ（電話受付アプリ）。ジム会員管理SaaSと同じ D1 を共有する。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "Cloudflare D1",
+      "Vercel"
+    ],
+    "localFolder": "~/code/ジム3部作/gym-phone-app",
+    "lastUpdated": "2026-09-05T03:17:27+09:00",
+    "commitCount": 52,
+    "recentCommits": 19,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://gym-phone-app.vercel.app",
+      "code": 503,
+      "ok": false,
+      "reason": "DEPLOYMENT_PAUSED"
+    },
+    "activityScore": 79,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "会員管理システム",
+    "description": "社内用の会員データ管理システム。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/gym-member-management",
+        "role": "ソースコード(private)"
+      },
+      {
+        "url": "https://merry-piroshki-95277a.netlify.app",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://gym-kaiin-app.worldwingkurume.workers.dev",
+        "role": "デプロイ先(Cloudflare)"
+      }
+    ],
+    "reasoning": "Netlify と Cloudflare Workers の両方に配信。ジム会員管理SaaSと同じ D1 を共有する4アプリのひとつ。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "Cloudflare Workers",
+      "D1"
+    ],
+    "localFolder": "~/code/ジム3部作/260204会員管理",
+    "lastUpdated": "2026-09-05T04:43:22+09:00",
+    "commitCount": 13,
+    "recentCommits": 13,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://merry-piroshki-95277a.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 71,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "蒼の勇者RPG（Roblox版）",
+    "description": "Roblox 上で動くドラクエ1風RPG。ブラウザ版とは別実装で、実プレイヤーは作者の息子。",
+    "urls": [
+      {
+        "url": "https://www.roblox.com/games/138207926698309/",
+        "role": "デプロイ先(Roblox)"
+      }
+    ],
+    "reasoning": "README に PlaceId 138207926698309 / GameId 10347126984 と記載。コードの正典は aoi_rpg_world.luau でクラウド本体とバイト一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Roblox",
+      "Luau"
+    ],
+    "localFolder": "~/code/aoi-roblox",
+    "lastUpdated": "2026-07-20T17:49:21+09:00",
+    "commitCount": 119,
+    "recentCommits": 119,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://www.roblox.com/games/138207926698309/",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 66,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
     "projectName": "Kotoba App (ことばの おべんきょう)",
@@ -41,7 +225,51 @@
       "TypeScript",
       "Next.js"
     ],
-    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/kotoba-app"
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/kotoba-app",
+    "lastUpdated": "2026-06-06T07:39:34+09:00",
+    "commitCount": 44,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://kotoba-app-2026.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 39,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "Project Resolver",
+    "description": "複数のURLをAIが自動でプロジェクトごとにグループ化するツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/project-resolver",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://project-resolver-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名とNetlifyデプロイ先URLが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/project-resolver",
+    "lastUpdated": "2026-06-10T09:37:25+09:00",
+    "commitCount": 21,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://project-resolver-app.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 37,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
     "projectName": "Kodomo Zukan (こども動物図鑑)",
@@ -63,49 +291,296 @@
       "TypeScript",
       "Next.js"
     ],
-    "localFolder": "~/code/kodomo-zukan"
+    "localFolder": "~/code/kodomo-zukan",
+    "lastUpdated": "2026-05-29T20:16:12+09:00",
+    "commitCount": 17,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://jun-kou-dai.github.io/kodomo-zukan/",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 34,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
-    "projectName": "Memories - 子供の成長記録",
-    "description": "子供の成長記録を家族で共有できるアプリ。写真や動画で思い出を記録し、家族で共有する機能を持ちます。",
+    "projectName": "Nano Storybook",
+    "description": "お子様だけの絵本を作成するAIを活用したサービス。Gemini APIで物語とイラストを自動生成。",
     "urls": [
       {
-        "url": "https://github.com/jun-kou-dai/kodomoseicho",
+        "url": "https://github.com/jun-kou-dai/storybook",
         "role": "ソースコード"
       },
       {
-        "url": "https://starlit-jelly-84dacb.netlify.app",
+        "url": "https://nano-storybook.netlify.app",
         "role": "デプロイ先"
       }
     ],
-    "reasoning": "GitHubリポジトリの説明「子供の成長記録」とNetlifyサイトのタイトルが一致。",
+    "reasoning": "GitHubリポジトリの説明「絵本」とNetlifyサイトのタイトルが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "JavaScript",
+      "Gemini API"
+    ],
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/nano-storybook",
+    "lastUpdated": "2026-06-11T10:49:06.025Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://nano-storybook.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 34,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "たすかるマップ (佐賀の子連れマップ)",
+    "description": "佐賀の子連れの親向けマップ。「今やってる×近い」で、子どもと入れる店・こどもの病院・トイレ・休憩を探せる。Google Placesで営業中を判定。",
+    "urls": [
+      {
+        "url": "https://tasukaru-map.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル「たすかるマップ」と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "Leaflet",
+      "Google Places API"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/tasukaru-map",
+    "lastUpdated": "2026-06-09T22:18:02.978Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://tasukaru-map.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 34,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "おちあう (Ochiau)",
+    "description": "一緒に出かける2人が、落ち合うまでの間だけお互いの位置を共有できるアプリ。P2P(PeerJS)で直接つなぎ、用が済んだら消すだけ。",
+    "urls": [
+      {
+        "url": "https://ochiau-jp.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル「おちあう」と一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "Leaflet",
+      "PeerJS"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/ochiau",
+    "lastUpdated": "2026-06-10T10:22:56.232Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://ochiau-jp.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 34,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "てあそびうた",
+    "description": "子ども向けのてあそびうたを提供するアプリケーションです。",
+    "urls": [
+      {
+        "url": "https://teasobi-uta-app.netlify.app/",
+        "role": "デプロイ先URL"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Expo",
+      "React Native"
+    ],
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/teasobi-uta",
+    "lastUpdated": "2026-06-02T07:55:49.040Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://teasobi-uta-app.netlify.app/",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 32,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "なきごえへんしん",
+    "description": "赤ちゃんの泣き声がインタラクティブな視覚効果（花が咲き、蝶が舞う、花火が上がる）と連動し、音楽を生成するサービス。",
+    "urls": [
+      {
+        "url": "https://nakigoe-henshin.netlify.app",
+        "role": "公開サイト"
+      }
+    ],
+    "reasoning": "提供されたURLは単独で一つの機能を持つWebアプリケーションであり、そのタイトル、説明、コンテンツ抜粋が一貫して「なきごえへんしん」という特定のサービスを説明しているため、一つのプロジェクトとして確立できます。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "Web Audio API"
+    ],
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/nakigoe-henshin",
+    "lastUpdated": "2026-06-04T11:56:05.732Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://nakigoe-henshin.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 32,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "VibeMochi (もちもちモチ)",
+    "description": "モチの赤ちゃんを育て、ご飯をあげたり、なでたり、遊んだりするバーチャルペットアプリ。",
+    "urls": [
+      {
+        "url": "https://vibemochi-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトル「もちもちモチ」と一致。",
     "confidence": "high",
     "status": "active",
     "techStack": [
       "HTML"
     ],
-    "localFolder": "~/code/260131 kids 4"
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/vibemochi",
+    "lastUpdated": "2026-05-30T12:43:14.065Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://vibemochi-app.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 31,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
-    "projectName": "Asa-check (朝チェック共有ツール)",
-    "description": "離れて暮らす親の朝の確認をサポートするツール。",
+    "projectName": "むにゃむにゃお返事おもちゃ",
+    "description": "「むにゃむにゃおへんじ」という設定可能なインタラクティブなおもちゃアプリ。Gemini APIとの連携機能も持ちます。",
     "urls": [
       {
-        "url": "https://github.com/jun-kou-dai/asa-check",
-        "role": "ソースコード"
-      },
-      {
-        "url": "https://asa-check-app.netlify.app",
-        "role": "デプロイ先"
+        "url": "https://munya-munya-app.netlify.app/",
+        "role": "デプロイ先URL"
       }
     ],
-    "reasoning": "GitHubリポジトリとNetlifyサイトが対応。",
+    "reasoning": "Netlifyサイトのタイトルと一致。",
     "confidence": "high",
     "status": "active",
     "techStack": [
-      "HTML"
+      "HTML",
+      "Web Audio API",
+      "Gemini API"
     ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/asa-check"
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/munya-munya",
+    "lastUpdated": "2026-05-30T05:16:40.741Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://munya-munya-app.netlify.app/",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 31,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "音声メモ (Grok対応版含む)",
+    "description": "話した内容を音声メモとして保存し、AI（Grok）による整形や各種SNS共有が可能なアプリ。",
+    "urls": [
+      {
+        "url": "https://inquisitive-cobbler-9de95c.netlify.app",
+        "role": "デプロイ先 (AI連携版)"
+      },
+      {
+        "url": "https://ornate-shortbread-b249da.netlify.app",
+        "role": "デプロイ先 (基本版)"
+      }
+    ],
+    "reasoning": "両方のURLが「音声メモ」をタイトルに持ち、音声入力・テキスト整形機能を提供。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "AI",
+      "音声認識"
+    ],
+    "localFolder": "~/code/_アーカイブ/260203voice-memo/voice-memo (current)",
+    "lastUpdated": "2026-05-22T09:39:18.642Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://inquisitive-cobbler-9de95c.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 30,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "Onsei / EarFlow (耳で読むニュース)",
+    "description": "音声文字起こし機能と、耳で聞くニュースを提供するサービス。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/onsei",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://onsei-beta.vercel.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリのhomepage URLとVercelデプロイ先が一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "React",
+      "Vite",
+      "TypeScript"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/onsei-earflow",
+    "lastUpdated": "2026-03-02T20:40:49+09:00",
+    "commitCount": 96,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://onsei-beta.vercel.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 29,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
     "projectName": "AI Auto Scheduler",
@@ -132,180 +607,18 @@
       "React Native",
       "TypeScript"
     ],
-    "localFolder": "~/Documents/プロジェクト/AIスケジューラー/ai-auto-scheduler"
-  },
-  {
-    "projectName": "Onsei / EarFlow (耳で読むニュース)",
-    "description": "音声文字起こし機能と、耳で聞くニュースを提供するサービス。",
-    "urls": [
-      {
-        "url": "https://github.com/jun-kou-dai/onsei",
-        "role": "ソースコード"
-      },
-      {
-        "url": "https://onsei-beta.vercel.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "GitHubリポジトリのhomepage URLとVercelデプロイ先が一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "React",
-      "Vite",
-      "TypeScript"
-    ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/onsei-earflow"
-  },
-  {
-    "projectName": "Nano Storybook",
-    "description": "お子様だけの絵本を作成するAIを活用したサービス。Gemini APIで物語とイラストを自動生成。",
-    "urls": [
-      {
-        "url": "https://github.com/jun-kou-dai/storybook",
-        "role": "ソースコード"
-      },
-      {
-        "url": "https://nano-storybook.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "GitHubリポジトリの説明「絵本」とNetlifyサイトのタイトルが一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML",
-      "JavaScript",
-      "Gemini API"
-    ],
-    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/nano-storybook"
-  },
-  {
-    "projectName": "VibeMochi (もちもちモチ)",
-    "description": "モチの赤ちゃんを育て、ご飯をあげたり、なでたり、遊んだりするバーチャルペットアプリ。",
-    "urls": [
-      {
-        "url": "https://vibemochi-app.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "Netlifyサイトのタイトル「もちもちモチ」と一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML"
-    ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/vibemochi"
-  },
-  {
-    "projectName": "Kyoku Gacha (今日の一曲ガチャ)",
-    "description": "気分や場面に合わせておすすめの曲を提供するPWA。YouTubeやSpotifyで再生可能。",
-    "urls": [
-      {
-        "url": "https://kyoku-gacha.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "Netlifyサイトのタイトルと一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML",
-      "PWA"
-    ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/kyoku-gacha"
-  },
-  {
-    "projectName": "Osoto Tenki (おそと天気)",
-    "description": "天気を「で、どうすればいいの？」という行動指針に変換し、通知を提供するアプリ。",
-    "urls": [
-      {
-        "url": "https://osoto-tenki.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "Netlifyサイトのタイトルと一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "JavaScript",
-      "Web Push",
-      "Netlify"
-    ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/osoto-tenki"
-  },
-  {
-    "projectName": "Kodomo Park (子どもとおでかけ公園マップ)",
-    "description": "近くの公園を設備情報（トイレ、遊具、水辺、駐車場、ベンチ）とともに表示するマップアプリ。",
-    "urls": [
-      {
-        "url": "https://kodomo-park.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "Netlifyサイトのタイトルと一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML"
-    ],
-    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/kodomo-park"
-  },
-  {
-    "projectName": "Ima Yatteru? (今やってる？ - 営業中のお店マップ)",
-    "description": "現在営業中のお店（薬局、飲食店、コンビニなど）を検索できるマップアプリ。",
-    "urls": [
-      {
-        "url": "https://ima-yatteru.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "Netlifyサイトのタイトルと一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML"
-    ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/ima-yatteru"
-  },
-  {
-    "projectName": "Toilet Finder JP (今すぐトイレ)",
-    "description": "現在地周辺の公共トイレ、コンビニ、駅を自動で探して表示するマップアプリ。",
-    "urls": [
-      {
-        "url": "https://toilet-finder-jp.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "Netlifyサイトのタイトルと一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML"
-    ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/toilet-finder"
-  },
-  {
-    "projectName": "Tubuyaki (つぶやき)",
-    "description": "思いついたことを声に出して録音し、テキストに変換してアイデアを整理するアプリ。",
-    "urls": [
-      {
-        "url": "https://github.com/jun-kou-dai/tubuyaki",
-        "role": "ソースコード"
-      },
-      {
-        "url": "https://tubuyaki.vercel.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "GitHubリポジトリ名とVercelデプロイ先URLが一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "TypeScript",
-      "Next.js"
-    ],
-    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/tubuyaki"
+    "localFolder": "~/Documents/プロジェクト/AIスケジューラー/ai-auto-scheduler",
+    "lastUpdated": "2026-03-07T22:54:59+09:00",
+    "commitCount": 60,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://jun-kou-dai.github.io/ai-auto-scheduler/",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 27,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
     "projectName": "AI Sukejuru (AIスケジューラー)",
@@ -328,7 +641,70 @@
       "React Native",
       "TypeScript"
     ],
-    "localFolder": "~/Documents/プロジェクト/AIスケジューラー/ai-sukejuru"
+    "localFolder": "~/Documents/プロジェクト/AIスケジューラー/ai-sukejuru",
+    "lastUpdated": "2026-02-16T01:59:13Z",
+    "commitCount": 67,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://jun-kou-dai.github.io/ai-sukejuru/",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 26,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "業務管理アプリ（チーム管理システム v2）",
+    "description": "15人規模チームのマネージャー専用ツール。客観的事実とミーティング発言からリスクスコアを自動計算・可視化する。",
+    "urls": [],
+    "reasoning": "app.py 冒頭に「蓄積型リスク早期察知システム チーム管理システム v2」と記載。Streamlit 製でローカル起動のみ、公開先なし。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "Python",
+      "Streamlit",
+      "Plotly"
+    ],
+    "localFolder": "~/code/業務管理アプリ_作り直し",
+    "lastUpdated": "2026-04-25T04:12:52.628Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 25,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "Asa-check (朝チェック共有ツール)",
+    "description": "離れて暮らす親の朝の確認をサポートするツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/asa-check",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://asa-check-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリとNetlifyサイトが対応。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/asa-check",
+    "lastUpdated": "2026-03-10T07:45:12+09:00",
+    "commitCount": 17,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://asa-check-app.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 23,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
     "projectName": "Memo no Maryoku (武器メモ / 次の一手メーカー)",
@@ -350,64 +726,264 @@
       "Vite",
       "Gemini API"
     ],
-    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/memonomaryoku"
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/memonomaryoku",
+    "lastUpdated": "2026-02-17T07:54:31Z",
+    "commitCount": 19,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://jun-kou-dai.github.io/memonomaryoku/",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 21,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
-    "projectName": "会員管理システム",
-    "description": "社内用の会員データ管理システム。",
+    "projectName": "Kyoku Gacha (今日の一曲ガチャ)",
+    "description": "気分や場面に合わせておすすめの曲を提供するPWA。YouTubeやSpotifyで再生可能。",
     "urls": [
       {
-        "url": "https://merry-piroshki-95277a.netlify.app",
+        "url": "https://kyoku-gacha.netlify.app",
         "role": "デプロイ先"
       }
     ],
-    "reasoning": "Netlifyサイトのタイトル「会員管理システム v3.0」と一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML"
-    ],
-    "localFolder": "~/code/ジム3部作/260204会員管理"
-  },
-  {
-    "projectName": "音声メモ (Grok対応版含む)",
-    "description": "話した内容を音声メモとして保存し、AI（Grok）による整形や各種SNS共有が可能なアプリ。",
-    "urls": [
-      {
-        "url": "https://inquisitive-cobbler-9de95c.netlify.app",
-        "role": "デプロイ先 (AI連携版)"
-      },
-      {
-        "url": "https://ornate-shortbread-b249da.netlify.app",
-        "role": "デプロイ先 (基本版)"
-      }
-    ],
-    "reasoning": "両方のURLが「音声メモ」をタイトルに持ち、音声入力・テキスト整形機能を提供。",
+    "reasoning": "Netlifyサイトのタイトルと一致。",
     "confidence": "high",
     "status": "active",
     "techStack": [
       "HTML",
-      "AI",
-      "音声認識"
+      "PWA"
     ],
-    "localFolder": "~/code/_アーカイブ/260203voice-memo/voice-memo (current)"
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/kyoku-gacha",
+    "lastUpdated": "2026-03-08T12:01:16.052Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://kyoku-gacha.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 20,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
-    "projectName": "Knowledge Base",
-    "description": "ナレッジベースに関するHTMLアプリ。",
+    "projectName": "Toilet Finder JP (今すぐトイレ)",
+    "description": "現在地周辺の公共トイレ、コンビニ、駅を自動で探して表示するマップアプリ。",
     "urls": [
       {
-        "url": "file:///Users/kajiyamajunichi/Desktop/knowledge-base.html",
-        "role": "ローカルファイル"
+        "url": "https://toilet-finder-jp.netlify.app",
+        "role": "デプロイ先"
       }
     ],
-    "reasoning": "URLパスに「knowledge-base」が含まれる。",
+    "reasoning": "Netlifyサイトのタイトルと一致。",
     "confidence": "high",
-    "status": "stopped",
+    "status": "active",
     "techStack": [
       "HTML"
     ],
-    "localFolder": "~/code/260206ナレッジベース"
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/toilet-finder",
+    "lastUpdated": "2026-03-10T03:30:14.616Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://toilet-finder-jp.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 20,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "Tubuyaki (つぶやき)",
+    "description": "思いついたことを声に出して録音し、テキストに変換してアイデアを整理するアプリ。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/tubuyaki",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://tubuyaki.vercel.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名とVercelデプロイ先URLが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/tubuyaki",
+    "lastUpdated": "2026-02-14T12:04:28Z",
+    "commitCount": 12,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://tubuyaki.vercel.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 20,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "ClipStock",
+    "description": "クリップボード履歴マネージャー（Electron）。起動: デスクトップのClipStock.commandをダブルクリック",
+    "urls": [],
+    "reasoning": "ローカルに node_modules と package-lock.json のみ残存し、ソースコードが無い（2026-09-20 確認）。記録として残す。",
+    "confidence": "high",
+    "status": "lost",
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/clipstock_v2",
+    "techStack": [
+      "Electron"
+    ],
+    "lastUpdated": "2026-03-06T08:11:01.064Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 20,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "まほうのもりタッチ",
+    "description": "子ども向けのタッチ遊びアプリ。画面に触れると森の生きものが反応する。",
+    "urls": [],
+    "reasoning": "app.json の expo.name が「まほうのもりタッチ」。Expo 製でローカルのみ、公開先なし。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "Expo",
+      "React Native",
+      "TypeScript"
+    ],
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/mahou-no-mori-touch",
+    "lastUpdated": "2026-03-14T12:50:48.139Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 20,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "Memories - 子供の成長記録",
+    "description": "子供の成長記録を家族で共有できるアプリ。写真や動画で思い出を記録し、家族で共有する機能を持ちます。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/kodomoseicho",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://starlit-jelly-84dacb.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリの説明「子供の成長記録」とNetlifyサイトのタイトルが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/code/260131 kids 4",
+    "lastUpdated": "2026-03-04T12:30:31.321Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://starlit-jelly-84dacb.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "Osoto Tenki (おそと天気)",
+    "description": "天気を「で、どうすればいいの？」という行動指針に変換し、通知を提供するアプリ。",
+    "urls": [
+      {
+        "url": "https://osoto-tenki.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "JavaScript",
+      "Web Push",
+      "Netlify"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/osoto-tenki",
+    "lastUpdated": "2026-02-24T03:27:44.558Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://osoto-tenki.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "Kodomo Park (子どもとおでかけ公園マップ)",
+    "description": "近くの公園を設備情報（トイレ、遊具、水辺、駐車場、ベンチ）とともに表示するマップアプリ。",
+    "urls": [
+      {
+        "url": "https://kodomo-park.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/kodomo-park",
+    "lastUpdated": "2026-02-23T09:16:54.200Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://kodomo-park.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
+  },
+  {
+    "projectName": "Ima Yatteru? (今やってる？ - 営業中のお店マップ)",
+    "description": "現在営業中のお店（薬局、飲食店、コンビニなど）を検索できるマップアプリ。",
+    "urls": [
+      {
+        "url": "https://ima-yatteru.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "Netlifyサイトのタイトルと一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/ima-yatteru",
+    "lastUpdated": "2026-02-23T06:03:59.161Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://ima-yatteru.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
     "projectName": "My Memo",
@@ -424,143 +1000,40 @@
     "techStack": [
       "HTML"
     ],
-    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/my-memo-final"
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/my-memo-final",
+    "lastUpdated": "2026-02-04T11:12:17.000Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://legendary-palmier-2f4641.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   },
   {
-    "projectName": "Gym Phone App",
-    "description": "ジムでの電話記録管理アプリ。",
+    "projectName": "Knowledge Base",
+    "description": "ナレッジベースに関するHTMLアプリ。",
     "urls": [
       {
-        "url": "https://github.com/jun-kou-dai/gym-phone-app",
-        "role": "ソースコード"
-      },
-      {
-        "url": "https://gym-phone-app.vercel.app",
-        "role": "デプロイ先"
+        "url": "file:///Users/kajiyamajunichi/Desktop/knowledge-base.html",
+        "role": "ローカルファイル"
       }
     ],
-    "reasoning": "GitHubリポジトリとVercelデプロイ先が対応。",
+    "reasoning": "ローカルフォルダ ~/code/260206ナレッジベース は空。参照先の ~/Desktop/knowledge-base.html も存在しない（2026-09-20 確認）。記録として残す。",
     "confidence": "high",
-    "status": "active",
+    "status": "lost",
     "techStack": [
       "HTML"
     ],
-    "localFolder": "~/code/ジム3部作/gym-phone-app"
-  },
-  {
-    "projectName": "ClipStock",
-    "description": "クリップボード履歴マネージャー（Electron）。起動: デスクトップのClipStock.commandをダブルクリック",
-    "urls": [],
-    "reasoning": "手動登録（ローカルプロジェクト）",
-    "confidence": "high",
-    "status": "developing",
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/clipstock_v2",
-    "techStack": [
-      "Electron"
-    ]
-  },
-  {
-    "projectName": "てあそびうた",
-    "description": "子ども向けのてあそびうたを提供するアプリケーションです。",
-    "urls": [
-      {
-        "url": "https://teasobi-uta-app.netlify.app/",
-        "role": "デプロイ先URL"
-      }
-    ],
-    "reasoning": "Netlifyサイトのタイトルと一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "Expo",
-      "React Native"
-    ],
-    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/teasobi-uta"
-  },
-  {
-    "projectName": "むにゃむにゃお返事おもちゃ",
-    "description": "「むにゃむにゃおへんじ」という設定可能なインタラクティブなおもちゃアプリ。Gemini APIとの連携機能も持ちます。",
-    "urls": [
-      {
-        "url": "https://munya-munya-app.netlify.app/",
-        "role": "デプロイ先URL"
-      }
-    ],
-    "reasoning": "Netlifyサイトのタイトルと一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML",
-      "Web Audio API",
-      "Gemini API"
-    ],
-    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/munya-munya"
-  },
-  {
-    "projectName": "なきごえへんしん",
-    "description": "赤ちゃんの泣き声がインタラクティブな視覚効果（花が咲き、蝶が舞う、花火が上がる）と連動し、音楽を生成するサービス。",
-    "urls": [
-      {
-        "url": "https://nakigoe-henshin.netlify.app",
-        "role": "公開サイト"
-      }
-    ],
-    "reasoning": "提供されたURLは単独で一つの機能を持つWebアプリケーションであり、そのタイトル、説明、コンテンツ抜粋が一貫して「なきごえへんしん」という特定のサービスを説明しているため、一つのプロジェクトとして確立できます。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML",
-      "Web Audio API"
-    ],
-    "localFolder": "~/Documents/プロジェクト/子ども向けアプリ/nakigoe-henshin"
-  },
-  {
-    "projectName": "会員伴走アプリ",
-    "description": "ジム会員の90日間の身体変化を一緒に見ていく伴走アプリ。",
-    "urls": [
-      {
-        "url": "https://github.com/jun-kou-dai/member-companion-app",
-        "role": "ソースコード"
-      }
-    ],
-    "reasoning": "手動登録（未デプロイのローカル開発プロジェクト）",
-    "confidence": "high",
-    "status": "developing",
-    "techStack": [
-      "TypeScript",
-      "Next.js"
-    ],
-    "localFolder": "~/code/_アーカイブ/260503会員伴走アプリ"
-  },
-  {
-    "projectName": "たすかるマップ (佐賀の子連れマップ)",
-    "description": "佐賀の子連れの親向けマップ。「今やってる×近い」で、子どもと入れる店・こどもの病院・トイレ・休憩を探せる。Google Placesで営業中を判定。",
-    "urls": [
-      {
-        "url": "https://tasukaru-map.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "Netlifyサイトのタイトル「たすかるマップ」と一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML",
-      "Leaflet",
-      "Google Places API"
-    ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/tasukaru-map"
-  },
-  {
-    "projectName": "おちあう (Ochiau)",
-    "description": "一緒に出かける2人が、落ち合うまでの間だけお互いの位置を共有できるアプリ。P2P(PeerJS)で直接つなぎ、用が済んだら消すだけ。",
-    "urls": [
-      { "url": "https://ochiau-jp.netlify.app", "role": "デプロイ先" }
-    ],
-    "reasoning": "Netlifyサイトのタイトル「おちあう」と一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [ "HTML", "Leaflet", "PeerJS" ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/ochiau"
+    "localFolder": "~/code/260206ナレッジベース",
+    "lastUpdated": null,
+    "dateSource": "none",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 0,
+    "checkedAt": "2026-09-20T09:03:57.695Z"
   }
 ]

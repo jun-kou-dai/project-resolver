@@ -51,9 +51,9 @@ export async function resolveProjects(
           confidence: (['high', 'medium', 'low'].includes(String(p.confidence))
             ? String(p.confidence)
             : 'low') as 'high' | 'medium' | 'low',
-          status: (['active', 'developing', 'prototype', 'stopped', 'unknown'].includes(String(p.status))
+          status: (['active', 'developing', 'prototype', 'stopped', 'lost', 'unknown'].includes(String(p.status))
             ? String(p.status)
-            : 'unknown') as 'active' | 'developing' | 'prototype' | 'stopped' | 'unknown',
+            : 'unknown') as 'active' | 'developing' | 'prototype' | 'stopped' | 'lost' | 'unknown',
           techStack: Array.isArray(p.techStack) ? p.techStack.map(String) : undefined,
           localFolder: p.localFolder ? String(p.localFolder) : undefined,
         })),

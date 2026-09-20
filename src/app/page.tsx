@@ -1,10 +1,22 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { ProjectCard } from './components/ProjectCard';
 import { LoadingIndicator } from './components/LoadingIndicator';
 import type { ResolveResponse } from '@/lib/types';
 import { loadSavedData, saveData, clearData, mergeUrls, type SavedData } from '@/lib/storage';
+
+type SortKey = 'activity' | 'recent' | 'volume' | 'name';
+
+const sortLabels: Record<SortKey, string> = {
+  activity: '活発順',
+  recent: '最終開発日順',
+  volume: '開発量順',
+  name: '名前順',
+};
+
+// 停止中・消滅は、どの並び順でも末尾にまとめる
+const INACTIVE_STATUS = new Set(['stopped', 'lost']);
 
 // プロジェクトデータをGitHubに同期（バックグラウンド、失敗してもUIに影響なし）
 function syncToGitHub(data: SavedData) {
@@ -55,6 +67,7 @@ export default function Home() {
   const [urls, setUrls] = useState('');
   const [showAddForm, setShowAddForm] = useState(false);
   const [initialized, setInitialized] = useState(false);
+  const [sortKey, setSortKey] = useState<SortKey>('activity');
 
   // 起動時にGitHub API経由で最新データを取得（全デバイス共通）
   useEffect(() => {
@@ -269,6 +282,28 @@ export default function Home() {
     setSaved(newSaved);
   }
 
+  // 表示のためだけに並べ替える。保存データの順序は触らない。
+  // 削除・フォルダ変更が正しい行に当たるよう、元の添字を持ち回る。
+  const sortedProjects = useMemo(() => {
+    const list = (saved?.projects || []).map((project, index) => ({ project, index }));
+    type Row = (typeof list)[number];
+    const comparators: Record<SortKey, (a: Row, b: Row) => number> = {
+      activity: (a, b) => (b.project.activityScore ?? 0) - (a.project.activityScore ?? 0),
+      recent: (a, b) => (b.project.lastUpdated || '').localeCompare(a.project.lastUpdated || ''),
+      volume: (a, b) => (b.project.commitCount ?? 0) - (a.project.commitCount ?? 0),
+      name: (a, b) => a.project.projectName.localeCompare(b.project.projectName, 'ja'),
+    };
+    return list.sort((a, b) => {
+      const aOut = INACTIVE_STATUS.has(a.project.status) ? 1 : 0;
+      const bOut = INACTIVE_STATUS.has(b.project.status) ? 1 : 0;
+      if (aOut !== bOut) return aOut - bOut;
+      return comparators[sortKey](a, b);
+    });
+  }, [saved?.projects, sortKey]);
+
+  // 公開先が落ちているものの件数（ヘッダーで警告を出すため）
+  const downCount = (saved?.projects || []).filter(p => p.liveStatus && !p.liveStatus.ok).length;
+
   if (!initialized) return null;
 
   const hasProjects = saved && saved.projects.length > 0;
@@ -277,35 +312,30 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       {/* ヘッダー */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
-        <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-y-2">
           <div>
             <h1 className="text-lg font-bold text-gray-900">Project Resolver</h1>
             {saved?.lastUpdated && (
               <p className="text-xs text-gray-400">最終更新: {saved.lastUpdated}</p>
             )}
           </div>
-          <div className="flex items-center gap-3">
-            {hasProjects && (
-              <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                {saved.projects.length}件のプロジェクト
-              </span>
-            )}
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <button
               onClick={handleAddLocalProject}
-              className="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors cursor-pointer"
+              className="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors cursor-pointer whitespace-nowrap"
             >
               + ローカル追加
             </button>
             <button
               onClick={() => setShowAddForm(!showAddForm)}
-              className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-pointer"
+              className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-pointer whitespace-nowrap"
             >
               + URL追加
             </button>
             {hasProjects && (
               <button
                 onClick={handleClear}
-                className="text-xs text-gray-400 hover:text-red-500 cursor-pointer"
+                className="text-xs text-gray-400 hover:text-red-500 cursor-pointer whitespace-nowrap"
               >
                 全削除
               </button>
@@ -365,16 +395,40 @@ export default function Home() {
         {/* メイン: プロジェクト一覧 */}
         {hasProjects ? (
           <div>
+            {/* 一覧に関する情報と操作は、一覧の直上にまとめる */}
+            <div className="flex flex-wrap items-center gap-3 mb-4">
+              <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full whitespace-nowrap">
+                {saved.projects.length}件のプロジェクト
+              </span>
+              {downCount > 0 && (
+                <span className="text-sm text-red-700 bg-red-50 border border-red-200 px-3 py-1 rounded-full whitespace-nowrap" title="公開先がHTTPエラーを返しています">
+                  ⚠ 公開先が落ちている {downCount}件
+                </span>
+              )}
+              <label className="flex items-center gap-1.5 text-sm text-gray-500 ml-auto whitespace-nowrap">
+                並び順
+                <select
+                  value={sortKey}
+                  onChange={(e) => setSortKey(e.target.value as SortKey)}
+                  className="border border-gray-300 rounded-lg px-2 py-1.5 bg-white text-gray-700 cursor-pointer focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                >
+                  {(Object.keys(sortLabels) as SortKey[]).map(k => (
+                    <option key={k} value={k}>{sortLabels[k]}</option>
+                  ))}
+                </select>
+              </label>
+            </div>
+
             <div className="grid gap-4">
-              {saved.projects.map((project, i) => (
-                <div key={i} className="relative group">
+              {sortedProjects.map(({ project, index }) => (
+                <div key={index} className="relative group min-w-0">
                   <ProjectCard
                     {...project}
-                    onLocalFolderChange={(folder) => handleLocalFolderChange(i, folder)}
+                    onLocalFolderChange={(folder) => handleLocalFolderChange(index, folder)}
                   />
                   <button
-                    onClick={() => handleDeleteProject(i)}
-                    className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 text-xs text-gray-400 hover:text-red-500 transition-opacity cursor-pointer bg-white rounded px-2 py-1 border border-gray-200"
+                    onClick={() => handleDeleteProject(index)}
+                    className="absolute -top-2 -right-2 opacity-0 group-hover:opacity-100 text-xs text-gray-400 hover:text-red-500 hover:border-red-200 transition-opacity cursor-pointer bg-white rounded-full shadow-sm px-2.5 py-1 border border-gray-200"
                   >
                     削除
                   </button>
