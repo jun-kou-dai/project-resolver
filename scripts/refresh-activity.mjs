@@ -118,7 +118,10 @@ async function checkUrl(url) {
     }
     // Vercel は停止中の配信に DEPLOYMENT_PAUSED を返す。理由が分かるので拾っておく
     const reason = res.headers.get('x-vercel-error');
-    return { code: res.status, ok: res.ok, ...(reason ? { reason } : {}) };
+    // 401/403 は本人限定で公開しているサイトの正常な応答。落ちている扱いにしない
+    const ok = res.ok || res.status === 401 || res.status === 403;
+    return { code: res.status, ok, ...(reason ? { reason } : {}),
+             ...(res.status === 401 || res.status === 403 ? { note: '本人限定（要ログイン）' } : {}) };
   } catch {
     return { code: 0, ok: false, reason: 'NO_RESPONSE' };
   } finally {
