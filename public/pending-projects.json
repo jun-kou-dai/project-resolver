@@ -1832,7 +1832,8 @@
       "ok": false
     },
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "SystemV5 App",
@@ -1927,7 +1928,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "生年月日ユーティリティ",
@@ -1964,7 +1966,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "スマート飲み会 会費計算",
@@ -1997,7 +2000,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "あなたの人生の物語（ライフタイムライン）",
@@ -2030,7 +2034,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "インタラクティブカレンダー",
@@ -2063,7 +2068,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "パーソナル健康分析レポート",
@@ -2096,7 +2102,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "血圧チェッカー",
@@ -2125,7 +2132,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "Time Duration Calculator",
@@ -2154,7 +2162,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "QRコード生成ツール",
@@ -2183,7 +2192,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "Personal Dashboard",
@@ -2212,7 +2222,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "My Creative Portfolio",
@@ -2257,7 +2268,8 @@
       "ok": true
     },
     "activityScore": 10,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "ワールドウィング久留米 サイト",
@@ -2290,7 +2302,8 @@
       "ok": true
     },
     "activityScore": 9,
-    "checkedAt": "2026-09-20T09:52:26.145Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z",
+    "noLocalSource": true
   },
   {
     "projectName": "Knowledge Base",

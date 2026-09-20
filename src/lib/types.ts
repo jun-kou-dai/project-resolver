@@ -46,6 +46,7 @@ export const ProjectGrouping = z.object({
   lastUpdated: z.string().nullable().optional().describe('最終開発日（ISO8601）'),
   dateSource: z.enum(['git', 'file', 'deploy', 'none']).optional().describe('最終開発日の根拠: git=最終コミット日, file=ソースの更新日時, deploy=公開日, none=不明'),
   deployedAt: z.string().nullable().optional().describe('公開先の最終公開日（ソースが手元に無いもの用・手入力）'),
+  noLocalSource: z.boolean().optional().describe('探した上でローカルにソースが無いと確定したもの。パス推測の対象外にする'),
   commitCount: z.number().optional().describe('累計コミット数（gitのときのみ）'),
   recentCommits: z.number().optional().describe('直近90日のコミット数'),
   activityScore: z.number().optional().describe('活発さ 0-100（新しさ6割＋開発量4割）'),

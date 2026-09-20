@@ -112,7 +112,7 @@ export default function Home() {
   // localFolder未設定のプロジェクトがあれば自動マッチング
   useEffect(() => {
     if (!saved || saved.projects.length === 0) return;
-    const hasUnmatched = saved.projects.some(p => !p.localFolder);
+    const hasUnmatched = saved.projects.some(p => !p.localFolder && !p.noLocalSource);
     if (!hasUnmatched) return;
 
     fetch('/api/match-folders', {
@@ -131,7 +131,9 @@ export default function Home() {
           const heuristicMatches: Record<number, string> = {};
           for (let i = 0; i < saved.projects.length; i++) {
             const p = saved.projects[i];
-            if (p.localFolder) continue;
+            // 調査済みで「ローカルに無い」と確定しているものは推測しない。
+            // 存在しないパスを出すと、手元にあるように見えてしまう。
+            if (p.localFolder || p.noLocalSource) continue;
             const guessed = guessLocalFolder(p.urls?.map(u => u.url) || []);
             if (guessed) heuristicMatches[i] = guessed;
           }

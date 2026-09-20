@@ -18,6 +18,7 @@ interface ProjectCardProps {
   status: 'active' | 'developing' | 'prototype' | 'stopped' | 'lost' | 'unknown';
   techStack?: string[];
   localFolder?: string | null;
+  noLocalSource?: boolean;
   // scripts/refresh-activity.mjs が実測した値
   lastUpdated?: string | null;
   dateSource?: 'git' | 'file' | 'deploy' | 'none';
@@ -94,7 +95,7 @@ const dateSourceNote: Record<string, string> = {
 
 export function ProjectCard({
   projectName, description, urls, reasoning,
-  confidence, status, techStack, localFolder,
+  confidence, status, techStack, localFolder, noLocalSource,
   lastUpdated, dateSource, commitCount, recentCommits, activityScore, liveStatus,
   onLocalFolderChange,
 }: ProjectCardProps) {
@@ -200,6 +201,8 @@ export function ProjectCard({
             <div className="flex items-center gap-2 flex-1">
               {localFolder ? (
                 <span className="font-mono text-amber-900 break-all">{localFolder}</span>
+              ) : noLocalSource ? (
+                <span className="text-amber-600">ローカルにソースなし（探して見つからなかった）</span>
               ) : (
                 <span className="text-amber-500 italic">未設定</span>
               )}
