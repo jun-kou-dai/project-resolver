@@ -143,7 +143,14 @@ async function main() {
 
     // --- 最終開発日と開発量 ---
     const dir = expandHome(p.localFolder);
-    if (dir && fs.existsSync(dir)) {
+    if (dir && fs.existsSync(dir) && fs.statSync(dir).isFile()) {
+      // 1ファイル完結の試作は、そのファイルの更新日時がそのまま最終開発日
+      p.lastUpdated = new Date(fs.statSync(dir).mtimeMs).toISOString();
+      p.dateSource = 'file';
+      p.commitCount = 0;
+      p.recentCommits = 0;
+      fileCount++;
+    } else if (dir && fs.existsSync(dir)) {
       const g = gitActivity(dir);
       if (g) {
         Object.assign(p, g, { dateSource: 'git' });

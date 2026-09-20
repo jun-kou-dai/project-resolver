@@ -12,7 +12,7 @@
         "role": "デプロイ先"
       }
     ],
-    "reasoning": "開発本体は ~/code/260611（1234コミット）。配信用に ~/code/aoi-no-yusha（522コミット）へ書き出し、GitHub Pages で公開している。手持ちで最大規模の開発。",
+    "reasoning": "開発本体は ~/code/260611（1234コミット）。配信用に ~/code/aoi-no-yusha（522コミット）へ書き出しGitHub Pagesで公開。~/Desktop/260611 は同じHEADの別コピー。手持ちで最大規模。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -31,7 +31,7 @@
       "ok": true
     },
     "activityScore": 93,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "会員伴走アプリ",
@@ -46,7 +46,7 @@
         "role": "デプロイ先"
       }
     ],
-    "reasoning": "READMEに「デモではなく本番。依頼者本人が携帯から週3回使用」と明記。旧試作 ~/code/_アーカイブ/260503会員伴走アプリ (member-companion-app・2コミット) から移行済み。",
+    "reasoning": "READMEに「デモではない。依頼者本人が携帯から週3回使用」と明記。旧試作 ~/code/_アーカイブ/260503会員伴走アプリ(member-companion-app・2コミット)から移行。companion-demo-5058パスキー確認 は検証用コピー。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -67,7 +67,7 @@
       "reason": "DEPLOYMENT_PAUSED"
     },
     "activityScore": 85,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "ジム会員管理SaaS (gym-saas)",
@@ -101,7 +101,7 @@
       "ok": true
     },
     "activityScore": 83,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Gym Phone App",
@@ -136,7 +136,40 @@
       "reason": "DEPLOYMENT_PAUSED"
     },
     "activityScore": 79,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "Project Resolver",
+    "description": "複数のURLをAIが自動でプロジェクトごとにグループ化するツール。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/project-resolver",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://project-resolver-app.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHubリポジトリ名とNetlifyデプロイ先URLが一致。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "TypeScript",
+      "Next.js"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/project-resolver",
+    "lastUpdated": "2026-09-20T18:18:20+09:00",
+    "commitCount": 22,
+    "recentCommits": 1,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://project-resolver-app.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 73,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "会員管理システム",
@@ -155,7 +188,7 @@
         "role": "デプロイ先(Cloudflare)"
       }
     ],
-    "reasoning": "Netlify と Cloudflare Workers の両方に配信。ジム会員管理SaaSと同じ D1 を共有する4アプリのひとつ。",
+    "reasoning": "Netlify と Cloudflare Workers の両方に配信。ジム会員管理SaaSと同じD1を共有する4アプリのひとつ。-本体退避-2026-08-12 と -worker検証 は同フォルダ内の退避コピー。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -174,7 +207,27 @@
       "ok": true
     },
     "activityScore": 71,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "Second Brain",
+    "description": "Obsidian上で動かす個人知識ベースの仕組み。プロジェクト・知識・アウトプット・日誌を分けて運用する。",
+    "urls": [],
+    "reasoning": "00_システム〜05_日誌の構成と説明書_Second_Brain.md。05_日誌に News_Candidates.md が毎日追加されており、いまも動いている。.agent/skills に skill_creator・prompt_engineer・my_writer・context-updater を内蔵。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "Obsidian",
+      "Markdown",
+      "Python"
+    ],
+    "localFolder": "~/ob/プロダクト/2nd-Brain",
+    "lastUpdated": "2026-09-19T21:00:05.847Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 68,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "蒼の勇者RPG（Roblox版）",
@@ -203,7 +256,248 @@
       "ok": true
     },
     "activityScore": 66,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: chat-handoff",
+    "description": "いまの会話を、新しいチャットに貼るだけで再開できる引き継ぎプロンプトにする。",
+    "urls": [],
+    "reasoning": "~/.claude/skills に導入済みで、実際に発動する状態。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/.claude/skills/chat-handoff",
+    "lastUpdated": "2026-08-20T13:42:58.037Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 54,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "AIスキル図鑑",
+    "description": "手持ちのClaude Codeスキルをカード化して一覧できるビューア。図鑑をひらく.command / .bat で起動し、発動回数も集計する。",
+    "urls": [],
+    "reasoning": "_engine に build_zukan_v4.py・serve_zukan.py・scan_skills.py・scan_hatsudou.py。起動用の .command と .bat が同梱。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "Python",
+      "HTML",
+      "JavaScript"
+    ],
+    "localFolder": "~/code/260812AIスキル図鑑/スキル図鑑",
+    "lastUpdated": "2026-08-13T03:38:09.464Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 52,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: hajimete-no-skill",
+    "description": "はじめてのスキル作りを、1問ずつの対話で案内する。裏側の仕組みを実況しながらSKILL.mdに仕立てる。",
+    "urls": [],
+    "reasoning": "~/.claude/skills に導入済みで、実際に発動する状態。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/.claude/skills/hajimete-no-skill",
+    "lastUpdated": "2026-08-12T12:03:25.041Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 51,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: ai-manga-creator",
+    "description": "時事ネタを調査して10〜15ページの解説漫画を企画から完成まで作る。fal APIで作画する。",
+    "urls": [],
+    "reasoning": "SKILL.md に nano-banana-2 / nano-banana-2-edit で作画と記載。works 配下に生成物101ファイル。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill",
+      "fal API"
+    ],
+    "localFolder": "~/code/260807aiアニメ/.claude/skills/ai-manga-creator",
+    "lastUpdated": "2026-08-08T04:14:38.687Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 50,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "むなかた制作ツール 7本",
+    "description": "納品用の小ツール一式。ai-design-checker / html-to-md / image-downloader / markdown-memo / page-checker / prompto-manager / source-sleep-switch。各zip同梱。",
+    "urls": [],
+    "reasoning": "7本それぞれにバージョン番号つきフォルダとzipがあり、マニュアル.html も同梱。納品物一式とみられる。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "JavaScript",
+      "HTML"
+    ],
+    "localFolder": "~/code/260807むなかた",
+    "lastUpdated": "2026-08-08T05:04:45.142Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 50,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "AIオフィス（教材）",
+    "description": "AIに社員役を割り当てて仕事を回す「オフィス」型の教材一式。serve.pyで起動し、ダッシュボードとオフィス画面をブラウザで使う。",
+    "urls": [],
+    "reasoning": "はじめに読む.md に「AIオフィスをやり直すために作られたフォルダ」と記載。教材原本/starter-office に dashboard.html(90KB)・office.html(37KB)・見本帳がある。前身の code/260725-ai-office は削除済み。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "Python",
+      "HTML",
+      "JavaScript"
+    ],
+    "localFolder": "~/AIオフィス",
+    "lastUpdated": "2026-08-06T12:24:06.736Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 49,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: 4ch-pipeline",
+    "description": "4チャンネル運用のパイプライン。",
+    "urls": [],
+    "reasoning": "260804ikehayasukill 配下。設計メモ(設計-x-long-post.md・種帳.md・穴メモ.md)と同じ教材フォルダにある。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/code/260804ikehayasukill/4ch-pipeline",
+    "lastUpdated": "2026-08-04T06:11:51.340Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 49,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: 軍配（pro-marketing-director）",
+    "description": "個人・小規模事業者向けのフルファネル・マーケティングディレクション。戦略宣言→制作→検品→計測の循環に変換する。",
+    "urls": [],
+    "reasoning": "SKILL.md に商品名「軍配（ぐんばい）」と明記。MARKETING_OS.md・HANDOFF.md が同階層にある。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/code/260725-gunbai/.claude/skills/pro-marketing-director",
+    "lastUpdated": "2026-08-02T13:04:48.485Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 48,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: note-article-writer",
+    "description": "note投稿用の解説記事をHTMLで作る。タイトル→本文→ハッシュタグ→アイキャッチ提案まで。",
+    "urls": [],
+    "reasoning": "~/.claude/skills に導入済みで、実際に発動する状態。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/.claude/skills/note-article-writer",
+    "lastUpdated": "2026-08-02T13:04:27.171Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 48,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: x-long-post",
+    "description": "X長文ポストを350〜500字で生成する。note・YouTube・Spotifyへの誘導に対応。",
+    "urls": [],
+    "reasoning": "~/.claude/skills に導入済みで、実際に発動する状態。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/.claude/skills/x-long-post",
+    "lastUpdated": "2026-08-04T04:25:01.735Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 48,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: x-reply",
+    "description": "大きいアカウントのポストへの返信案を3つ作る。感想でなく自分の知見・実例を足す。",
+    "urls": [],
+    "reasoning": "~/.claude/skills に導入済みで、実際に発動する状態。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/.claude/skills/x-reply",
+    "lastUpdated": "2026-08-02T10:36:14.617Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 48,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: skill-maker",
+    "description": "AI活用を棚卸しして、仕事の型をClaude Codeスキルとして販売できる状態まで仕上げる制作パイプライン。",
+    "urls": [],
+    "reasoning": "SKILL.md の description に「販売できる状態まで仕上げる制作パイプライン」。~/.claude/skills/skill-maker に導入済み。zipも同梱。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/code/260804ikehayasukill/skill-maker",
+    "lastUpdated": "2026-07-27T12:24:12.000Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 46,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "蒼の勇者 作業版（codex1 pro）",
+    "description": "蒼の勇者RPGの別作業コピー3種（aoi_work / aoi_v18_work / aoi_battle_hero_work）。",
+    "urls": [],
+    "reasoning": "rpg.html(1.1MB)を含む作業コピー。同じ親フォルダに aoi_work・aoi_v18_work もある。本流は ~/code/260611（1234コミット・2026-09-06）で、こちらは2026-07-18で止まっている。",
+    "confidence": "high",
+    "status": "stopped",
+    "techStack": [
+      "HTML",
+      "JavaScript"
+    ],
+    "localFolder": "~/Desktop/codex1 pro/aoi_battle_hero_work",
+    "lastUpdated": "2026-07-18T07:32:17.318Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 43,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Kotoba App (ことばの おべんきょう)",
@@ -236,40 +530,7 @@
       "ok": true
     },
     "activityScore": 39,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
-  },
-  {
-    "projectName": "Project Resolver",
-    "description": "複数のURLをAIが自動でプロジェクトごとにグループ化するツール。",
-    "urls": [
-      {
-        "url": "https://github.com/jun-kou-dai/project-resolver",
-        "role": "ソースコード"
-      },
-      {
-        "url": "https://project-resolver-app.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "GitHubリポジトリ名とNetlifyデプロイ先URLが一致。",
-    "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "TypeScript",
-      "Next.js"
-    ],
-    "localFolder": "~/Documents/プロジェクト/ユーティリティ/project-resolver",
-    "lastUpdated": "2026-06-10T09:37:25+09:00",
-    "commitCount": 21,
-    "recentCommits": 0,
-    "dateSource": "git",
-    "liveStatus": {
-      "url": "https://project-resolver-app.netlify.app",
-      "code": 200,
-      "ok": true
-    },
-    "activityScore": 37,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Kodomo Zukan (こども動物図鑑)",
@@ -284,7 +545,7 @@
         "role": "デプロイ先"
       }
     ],
-    "reasoning": "GitHubリポジトリとGitHub Pagesが一致。",
+    "reasoning": "~/code/kodomo-zukan が最新(17コミット)。~/Documents/プロジェクト/子ども向けアプリ/kodomo-zukan(4コミット)は古いコピー。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -302,7 +563,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Nano Storybook",
@@ -317,7 +578,7 @@
         "role": "デプロイ先"
       }
     ],
-    "reasoning": "GitHubリポジトリの説明「絵本」とNetlifyサイトのタイトルが一致。",
+    "reasoning": "GitHubリポジトリ名は storybook。フォルダ内に v1〜v14 の版が残っており、最新は nano-storybook-v14。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -336,7 +597,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "たすかるマップ (佐賀の子連れマップ)",
@@ -366,7 +627,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "おちあう (Ochiau)",
@@ -396,7 +657,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "てあそびうた",
@@ -425,7 +686,7 @@
       "ok": true
     },
     "activityScore": 32,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "なきごえへんしん",
@@ -454,7 +715,7 @@
       "ok": true
     },
     "activityScore": 32,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "VibeMochi (もちもちモチ)",
@@ -482,7 +743,7 @@
       "ok": true
     },
     "activityScore": 31,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "むにゃむにゃお返事おもちゃ",
@@ -512,7 +773,25 @@
       "ok": true
     },
     "activityScore": 31,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: creating-diagrams",
+    "description": "トピックを単一HTMLの図解にしてartifactで表示する。",
+    "urls": [],
+    "reasoning": "~/.claude/skills に導入済みで、実際に発動する状態。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/.claude/skills/creating-diagrams",
+    "lastUpdated": "2026-05-27T06:31:39.068Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 31,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "音声メモ (Grok対応版含む)",
@@ -527,7 +806,7 @@
         "role": "デプロイ先 (基本版)"
       }
     ],
-    "reasoning": "両方のURLが「音声メモ」をタイトルに持ち、音声入力・テキスト整形機能を提供。",
+    "reasoning": "~/code/_アーカイブ/260203voice-memo に voice-memo〜(8)と(current)の9版が残る。現行は (current)。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -546,7 +825,7 @@
       "ok": true
     },
     "activityScore": 30,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Onsei / EarFlow (耳で読むニュース)",
@@ -580,7 +859,7 @@
       "ok": true
     },
     "activityScore": 29,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "AI Auto Scheduler",
@@ -599,7 +878,7 @@
         "role": "APIプロキシ"
       }
     ],
-    "reasoning": "GitHubリポジトリ名、GitHub Pages、Netlifyプロキシが一致。",
+    "reasoning": "~/Documents/プロジェクト/AIスケジューラー/ai-auto-scheduler が最新(60コミット)。~/ai-auto-scheduler(29コミット)と ~/ai-auto-scheduler-mvp(2コミット)は同じGitHubリポジトリの古いコピー。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -618,7 +897,77 @@
       "ok": true
     },
     "activityScore": 27,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "Memories - 子供の成長記録",
+    "description": "子供の成長記録を家族で共有できるアプリ。写真や動画で思い出を記録し、家族で共有する機能を持ちます。",
+    "urls": [
+      {
+        "url": "https://github.com/jun-kou-dai/kodomoseicho",
+        "role": "ソースコード"
+      },
+      {
+        "url": "https://starlit-jelly-84dacb.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "GitHub リポジトリ kodomoseicho の実体は ~/kodomoseicho（55コミット）。~/code/260131 kids 4 はgit管理外の別コピー。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML",
+      "Firebase",
+      "Netlify"
+    ],
+    "localFolder": "~/kodomoseicho",
+    "lastUpdated": "2026-03-10T14:53:55+09:00",
+    "commitCount": 55,
+    "recentCommits": 0,
+    "dateSource": "git",
+    "liveStatus": {
+      "url": "https://starlit-jelly-84dacb.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 27,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: Fujin AI",
+    "description": "AI発信者Fujinの思考フレームと文体を再現するクローンエージェント。コンテンツ戦略・ローンチ設計に使う。",
+    "urls": [],
+    "reasoning": "SKILL.md の name は fujin-ai。persona.md・style.md・thinking.md・examples.md で構成。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/Desktop/01_AIスキル開発/Fujin_AI_Skills",
+    "lastUpdated": "2026-05-08T00:25:20.000Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 27,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: 西野亮廣相談bot",
+    "description": "西野亮廣の思考を再現する相談bot。",
+    "urls": [],
+    "reasoning": "Skill本体/nishino-counsel/SKILL.md の description が「[TODO: ...]」のまま未記入。未完成。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/Desktop/01_AIスキル開発/codex1 pro/西野亮廣相談bot_再構築",
+    "lastUpdated": "2026-05-02T07:12:21.052Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 27,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "AI Sukejuru (AIスケジューラー)",
@@ -652,7 +1001,43 @@
       "ok": true
     },
     "activityScore": 26,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "商品デモ制作キット",
+    "description": "商品デモを作るためのキット。index.htmlを含む。",
+    "urls": [],
+    "reasoning": "01_AIスキル開発/codex1 pro 配下。index.html を含む9ファイル構成。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Desktop/01_AIスキル開発/codex1 pro/商品デモ制作キット_demo",
+    "lastUpdated": "2026-04-26T06:25:55.029Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 26,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "スキル: アドラー人生相談",
+    "description": "アドラーの個人心理学をもとに人生相談に応答する。危機時はアドラー応答を停止して専門窓口へ橋渡しする。",
+    "urls": [],
+    "reasoning": "Skill本体/adler-counsel/SKILL.md に安全プロトコルの記載あり。要件定義書ドラフトが同階層にある。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/Desktop/01_AIスキル開発/codex1 pro/Claude-Code-アドラー本気版_再構築",
+    "lastUpdated": "2026-04-29T08:34:55.716Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 26,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "業務管理アプリ（チーム管理システム v2）",
@@ -672,7 +1057,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 25,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Asa-check (朝チェック共有ツール)",
@@ -704,7 +1089,44 @@
       "ok": true
     },
     "activityScore": 23,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "MulmoClaude 作業データ",
+    "description": "MulmoClaudeを使って貯めた個人データ一式（カレンダー・連絡先・チャット・メモリ）。",
+    "urls": [],
+    "reasoning": "git管理下だがリモート未設定。HTMLs/calendar/chat/contacts/scheduler/memory.md を含む。本体は ~/Projects/mulmoclaude（receptron/mulmoclaude のクローン）。",
+    "confidence": "high",
+    "status": "developing",
+    "techStack": [
+      "Markdown",
+      "HTML"
+    ],
+    "localFolder": "~/mulmoclaude",
+    "lastUpdated": "2026-04-09T22:45:46.824Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 23,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "定期実行スキル 3本",
+    "description": "Claudeの定期実行用スキル（morning-ai-news / disk-cleanup-v2 / disk-check-cleanup）。",
+    "urls": [],
+    "reasoning": "~/Documents/Claude/Scheduled 配下にSKILL.mdが3本。スケジュール実行用。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "Claude Code Skill"
+    ],
+    "localFolder": "~/Documents/Claude/Scheduled",
+    "lastUpdated": "2026-03-29T10:46:27.921Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 22,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Memo no Maryoku (武器メモ / 次の一手メーカー)",
@@ -737,7 +1159,7 @@
       "ok": true
     },
     "activityScore": 21,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Kyoku Gacha (今日の一曲ガチャ)",
@@ -766,7 +1188,7 @@
       "ok": true
     },
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Toilet Finder JP (今すぐトイレ)",
@@ -794,7 +1216,7 @@
       "ok": true
     },
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Tubuyaki (つぶやき)",
@@ -827,7 +1249,7 @@
       "ok": true
     },
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "ClipStock",
@@ -845,7 +1267,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "まほうのもりタッチ",
@@ -865,39 +1287,23 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
-    "projectName": "Memories - 子供の成長記録",
-    "description": "子供の成長記録を家族で共有できるアプリ。写真や動画で思い出を記録し、家族で共有する機能を持ちます。",
-    "urls": [
-      {
-        "url": "https://github.com/jun-kou-dai/kodomoseicho",
-        "role": "ソースコード"
-      },
-      {
-        "url": "https://starlit-jelly-84dacb.netlify.app",
-        "role": "デプロイ先"
-      }
-    ],
-    "reasoning": "GitHubリポジトリの説明「子供の成長記録」とNetlifyサイトのタイトルが一致。",
+    "projectName": "bilingual-app",
+    "description": "docsフォルダのみが残る企画。",
+    "urls": [],
+    "reasoning": "フォルダ内に docs のみでソースコードが無い（2026-09-20 確認）。",
     "confidence": "high",
-    "status": "active",
-    "techStack": [
-      "HTML"
-    ],
-    "localFolder": "~/code/260131 kids 4",
-    "lastUpdated": "2026-03-04T12:30:31.321Z",
+    "status": "lost",
+    "techStack": [],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/bilingual-app",
+    "lastUpdated": "2026-03-14T09:31:11.150Z",
     "dateSource": "file",
     "commitCount": 0,
     "recentCommits": 0,
-    "liveStatus": {
-      "url": "https://starlit-jelly-84dacb.netlify.app",
-      "code": 200,
-      "ok": true
-    },
-    "activityScore": 19,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "activityScore": 20,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Osoto Tenki (おそと天気)",
@@ -927,7 +1333,7 @@
       "ok": true
     },
     "activityScore": 19,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Kodomo Park (子どもとおでかけ公園マップ)",
@@ -955,7 +1361,7 @@
       "ok": true
     },
     "activityScore": 19,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Ima Yatteru? (今やってる？ - 営業中のお店マップ)",
@@ -983,7 +1389,101 @@
       "ok": true
     },
     "activityScore": 19,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "viberealm",
+    "description": "2nd-Brainのアウトプット配下にあるReactアプリ。",
+    "urls": [],
+    "reasoning": "package.json の name は viberealm。description 欄は空。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "lucide-react"
+    ],
+    "localFolder": "~/ob/プロダクト/2nd-Brain/04_アウトプット/viberealm",
+    "lastUpdated": "2026-03-02T23:26:58.728Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "command-post",
+    "description": "2nd-Brainのアウトプット配下にあるReactアプリ。",
+    "urls": [],
+    "reasoning": "package.json の name は command-post。description 欄は空。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "lucide-react"
+    ],
+    "localFolder": "~/ob/プロダクト/2nd-Brain/04_アウトプット/command-post",
+    "lastUpdated": "2026-03-02T22:58:30.351Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "quickvibe",
+    "description": "2nd-Brainのアウトプット配下にあるReactアプリ。",
+    "urls": [],
+    "reasoning": "package.json の name は quickvibe。description 欄は空。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React"
+    ],
+    "localFolder": "~/ob/プロダクト/2nd-Brain/04_アウトプット/quickvibe",
+    "lastUpdated": "2026-03-02T22:56:25.411Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "EarFlow（2nd-Brain版）",
+    "description": "2nd-Brain配下のEarFlow。Onsei/EarFlowとは別の実装。",
+    "urls": [],
+    "reasoning": "package.json の name は earflow。公開中の onsei-beta.vercel.app とはコードベースが別。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "Tailwind",
+      "Vite"
+    ],
+    "localFolder": "~/ob/プロダクト/2nd-Brain/01_プロジェクト/EarFlow",
+    "lastUpdated": "2026-02-19T00:31:08.372Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 18,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "260220kids / 260209文字起こしgrok",
+    "description": "ソースが1〜6ファイルだけ残る小さな試作2件。",
+    "urls": [],
+    "reasoning": "~/code/260220kids(6ファイル)と ~/code/260209文字起こしgrok(1ファイル)。どちらも2026-02で止まっている。",
+    "confidence": "high",
+    "status": "stopped",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/code/260220kids",
+    "lastUpdated": "2026-02-20T03:07:52.000Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 18,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "My Memo",
@@ -1011,7 +1511,288 @@
       "ok": true
     },
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "note分析ダッシュボード",
+    "description": "noteのエクスポートCSVを読み込んで、記事の反応を可視化するローカルHTMLツール。",
+    "urls": [],
+    "reasoning": "note-dashboard.html(41KB) と note-data-fetcher.html(18KB)。~/Documents/データ分析/260210ノート分析 にも別版あり。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "HTML",
+      "JavaScript"
+    ],
+    "localFolder": "~/Documents/データ分析/noteデータ",
+    "lastUpdated": "2026-02-05T03:47:09.420Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "My Memo（Supabase版）",
+    "description": "My Memo の Supabase 連携版。",
+    "urls": [],
+    "reasoning": "my-memo-final(公開中)とは別フォルダ。index.html 1ファイル構成。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "HTML",
+      "Supabase"
+    ],
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/my-memo-supabase",
+    "lastUpdated": "2026-02-04T10:47:36.000Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "My Memo（アプリ版）",
+    "description": "My Memo の package.json を持つ版。",
+    "urls": [],
+    "reasoning": "my-memo-final(公開中)とは別フォルダ。package.json あり6ファイル。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "JavaScript"
+    ],
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/my-memo-app",
+    "lastUpdated": "2026-02-04T09:28:43.000Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "voice-memo（Documents側）",
+    "description": "音声メモの別コピー。",
+    "urls": [],
+    "reasoning": "公開中の本体は ~/code/_アーカイブ/260203voice-memo/voice-memo (current)。こちらはindex.html 1ファイルのみ。",
+    "confidence": "high",
+    "status": "stopped",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/voice-memo",
+    "lastUpdated": "2026-02-03T10:41:42.000Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "ポモドーロタイマー",
+    "description": "作業時間を区切るポモドーロタイマー。1ファイル完結のReact試作。",
+    "urls": [],
+    "reasoning": "~/Documents/プロジェクト/ユーティリティ/pomodoro.jsx が単体で完結している試作。フォルダを持たない。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "JSX"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/pomodoro.jsx",
+    "lastUpdated": "2026-02-05T13:22:44.161Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "議事録アプリ",
+    "description": "会議の議事録を作る試作。1ファイル完結のReact試作。",
+    "urls": [],
+    "reasoning": "~/Documents/プロジェクト/ユーティリティ/meeting-minutes-app.jsx が単体で完結している試作。フォルダを持たない。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "JSX"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/meeting-minutes-app.jsx",
+    "lastUpdated": "2026-02-10T03:30:21.628Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "ビックリマン育児アプリ",
+    "description": "ビックリマン風の育児記録アプリ。1ファイル完結のReact試作。",
+    "urls": [],
+    "reasoning": "~/Documents/プロジェクト/ユーティリティ/bikkuriman-ikuji-app.jsx が単体で完結している試作。フォルダを持たない。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "JSX"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/bikkuriman-ikuji-app.jsx",
+    "lastUpdated": "2026-02-05T15:20:00.174Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "子ども日課ゲーミフィケーション",
+    "description": "子どもの日課をゲーム化する試作。1ファイル完結のReact試作。",
+    "urls": [],
+    "reasoning": "~/Documents/プロジェクト/ユーティリティ/子ども日課ゲーミフィケーション.jsx が単体で完結している試作。フォルダを持たない。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "JSX"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/子ども日課ゲーミフィケーション.jsx",
+    "lastUpdated": "2026-02-05T14:57:02.874Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "ドキュメント管理ツール",
+    "description": "書類を管理する試作。1ファイル完結のHTML。",
+    "urls": [],
+    "reasoning": "~/Documents/プロジェクト/ユーティリティ/doc-manager.html が単体で完結している試作。フォルダを持たない。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/ユーティリティ/doc-manager.html",
+    "lastUpdated": "2026-02-06T02:58:24.043Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "メモアプリ（memo-app）",
+    "description": "メモアプリの試作。1ファイル完結のReact試作。",
+    "urls": [],
+    "reasoning": "~/Documents/プロジェクト/メモ・ノート系アプリ/memo-app.jsx が単体で完結している試作。フォルダを持たない。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "JSX"
+    ],
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/memo-app.jsx",
+    "lastUpdated": "2026-02-04T13:01:55.545Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "ノートテイカー",
+    "description": "ノートを取る試作。1ファイル完結のReact試作。",
+    "urls": [],
+    "reasoning": "~/Documents/プロジェクト/メモ・ノート系アプリ/notetaker.jsx が単体で完結している試作。フォルダを持たない。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "JSX"
+    ],
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/notetaker.jsx",
+    "lastUpdated": "2026-02-10T13:23:21.840Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "memo.html",
+    "description": "メモの最小試作。1ファイル完結のHTML。",
+    "urls": [],
+    "reasoning": "~/Documents/プロジェクト/メモ・ノート系アプリ/memo.html が単体で完結している試作。フォルダを持たない。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/memo.html",
+    "lastUpdated": "2026-02-04T12:55:07.945Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "My Memo（単一HTML版）",
+    "description": "My Memo の1ファイル完結版（236KB）。",
+    "urls": [],
+    "reasoning": "~/Documents/プロジェクト/メモ・ノート系アプリ/My Memo.html が単体で完結している試作。フォルダを持たない。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": "~/Documents/プロジェクト/メモ・ノート系アプリ/My Memo.html",
+    "lastUpdated": "2026-02-04T10:05:18.591Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "SystemV5 App",
+    "description": "React + TypeScript + Vite 構成のアプリ。READMEはViteの初期テンプレートのまま。",
+    "urls": [],
+    "reasoning": "package.json と index.html・dist あり。README.md がVite初期テンプレのままで、用途の記載が無い。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Vite"
+    ],
+    "localFolder": "~/ob/プロダクト/SystemV5_App",
+    "lastUpdated": "2026-01-25T10:48:59.608Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 16,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
+  },
+  {
+    "projectName": "会員管理システム（旧バックアップ）",
+    "description": "会員管理システムの2026-05-03時点のバックアップ。",
+    "urls": [],
+    "reasoning": "FINAL-system-v3.0.jsx(133KB)・member-system-fixed.jsx(27KB)・member-management-system/ を含む。現行は ~/code/ジム3部作/260204会員管理。",
+    "confidence": "high",
+    "status": "stopped",
+    "techStack": [
+      "React",
+      "JSX"
+    ],
+    "localFolder": "~/Documents/プロジェクト/会員管理・ジム/_BACKUP_20260503",
+    "lastUpdated": "2026-01-23T10:51:45.284Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 16,
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   },
   {
     "projectName": "Knowledge Base",
@@ -1034,6 +1815,6 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 0,
-    "checkedAt": "2026-09-20T09:03:57.695Z"
+    "checkedAt": "2026-09-20T09:42:26.090Z"
   }
 ]
