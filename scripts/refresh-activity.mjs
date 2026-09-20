@@ -136,7 +136,7 @@ function activityScore({ lastUpdated, commitCount, recentCommits, dateSource }) 
 async function main() {
   const projects = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
   const checkedAt = new Date().toISOString();
-  let gitCount = 0, fileCount = 0, noneCount = 0, downCount = 0;
+  let gitCount = 0, fileCount = 0, deployCount = 0, noneCount = 0, downCount = 0;
 
   for (const p of projects) {
     for (const k of COMPUTED) delete p[k];
@@ -163,6 +163,13 @@ async function main() {
         p.recentCommits = 0;
         if (f) fileCount++; else noneCount++;
       }
+    } else if (p.deployedAt) {
+      // ソースが手元に無く、公開サイトだけ残っているもの。公開日を最終開発日として扱う
+      p.lastUpdated = p.deployedAt;
+      p.dateSource = 'deploy';
+      p.commitCount = 0;
+      p.recentCommits = 0;
+      deployCount++;
     } else {
       p.lastUpdated = null;
       p.dateSource = 'none';
@@ -189,7 +196,7 @@ async function main() {
   projects.sort((a, b) => (b.activityScore ?? 0) - (a.activityScore ?? 0));
   fs.writeFileSync(DATA_FILE, JSON.stringify(projects, null, 2) + '\n', 'utf8');
 
-  console.log(`\n${projects.length}件を更新しました（git:${gitCount} / ファイル日付:${fileCount} / 不明:${noneCount}）`);
+  console.log(`\n${projects.length}件を更新しました（git:${gitCount} / ファイル日付:${fileCount} / 公開日:${deployCount} / 不明:${noneCount}）`);
   if (downCount > 0) console.log(`⚠ 公開先が応答しないものが ${downCount}件あります`);
 }
 

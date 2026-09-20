@@ -31,7 +31,7 @@
       "ok": true
     },
     "activityScore": 93,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "会員伴走アプリ",
@@ -66,8 +66,8 @@
       "ok": false,
       "reason": "DEPLOYMENT_PAUSED"
     },
-    "activityScore": 85,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "activityScore": 84,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "ジム会員管理SaaS (gym-saas)",
@@ -101,7 +101,7 @@
       "ok": true
     },
     "activityScore": 83,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Gym Phone App",
@@ -136,7 +136,7 @@
       "reason": "DEPLOYMENT_PAUSED"
     },
     "activityScore": 79,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Project Resolver",
@@ -159,9 +159,9 @@
       "Next.js"
     ],
     "localFolder": "~/Documents/プロジェクト/ユーティリティ/project-resolver",
-    "lastUpdated": "2026-09-20T18:18:20+09:00",
-    "commitCount": 22,
-    "recentCommits": 1,
+    "lastUpdated": "2026-09-20T18:43:55+09:00",
+    "commitCount": 23,
+    "recentCommits": 2,
     "dateSource": "git",
     "liveStatus": {
       "url": "https://project-resolver-app.netlify.app",
@@ -169,7 +169,7 @@
       "ok": true
     },
     "activityScore": 73,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "会員管理システム",
@@ -207,7 +207,7 @@
       "ok": true
     },
     "activityScore": 71,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Second Brain",
@@ -227,7 +227,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 68,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "蒼の勇者RPG（Roblox版）",
@@ -256,7 +256,7 @@
       "ok": true
     },
     "activityScore": 66,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: chat-handoff",
@@ -274,7 +274,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 54,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "AIスキル図鑑",
@@ -294,7 +294,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 52,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: hajimete-no-skill",
@@ -312,7 +312,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 51,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: ai-manga-creator",
@@ -331,7 +331,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 50,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "むなかた制作ツール 7本",
@@ -350,7 +350,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 50,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "AIオフィス（教材）",
@@ -370,7 +370,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 49,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: 4ch-pipeline",
@@ -388,7 +388,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 49,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: 軍配（pro-marketing-director）",
@@ -406,7 +406,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 48,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: note-article-writer",
@@ -424,7 +424,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 48,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: x-long-post",
@@ -442,7 +442,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 48,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: x-reply",
@@ -460,7 +460,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 48,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: skill-maker",
@@ -478,7 +478,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 46,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "蒼の勇者 作業版（codex1 pro）",
@@ -497,7 +497,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 43,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Kotoba App (ことばの おべんきょう)",
@@ -530,7 +530,7 @@
       "ok": true
     },
     "activityScore": 39,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Kodomo Zukan (こども動物図鑑)",
@@ -563,7 +563,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Nano Storybook",
@@ -597,7 +597,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "たすかるマップ (佐賀の子連れマップ)",
@@ -627,7 +627,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "おちあう (Ochiau)",
@@ -657,7 +657,7 @@
       "ok": true
     },
     "activityScore": 34,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "てあそびうた",
@@ -686,7 +686,7 @@
       "ok": true
     },
     "activityScore": 32,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "なきごえへんしん",
@@ -715,7 +715,7 @@
       "ok": true
     },
     "activityScore": 32,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "VibeMochi (もちもちモチ)",
@@ -743,7 +743,7 @@
       "ok": true
     },
     "activityScore": 31,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "むにゃむにゃお返事おもちゃ",
@@ -773,7 +773,7 @@
       "ok": true
     },
     "activityScore": 31,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: creating-diagrams",
@@ -791,7 +791,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 31,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "音声メモ (Grok対応版含む)",
@@ -825,7 +825,7 @@
       "ok": true
     },
     "activityScore": 30,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Onsei / EarFlow (耳で読むニュース)",
@@ -859,7 +859,7 @@
       "ok": true
     },
     "activityScore": 29,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "AI Auto Scheduler",
@@ -897,7 +897,7 @@
       "ok": true
     },
     "activityScore": 27,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Memories - 子供の成長記録",
@@ -910,9 +910,25 @@
       {
         "url": "https://starlit-jelly-84dacb.netlify.app",
         "role": "デプロイ先"
+      },
+      {
+        "url": "https://stately-brigadeiros-52df3f.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://resilient-semolina-97c1a6.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://keen-starlight-fa5ff4.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://cool-begonia-54c031.netlify.app",
+        "role": "旧デプロイ"
       }
     ],
-    "reasoning": "GitHub リポジトリ kodomoseicho の実体は ~/kodomoseicho（55コミット）。~/code/260131 kids 4 はgit管理外の別コピー。",
+    "reasoning": "GitHubリポジトリ kodomoseicho の実体は ~/kodomoseicho（55コミット）。~/code/260131 kids 4 はgit管理外の別コピー。旧デプロイが Netlify に4つ残っている（2026-01-30〜31公開・現在も200応答）。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -931,7 +947,7 @@
       "ok": true
     },
     "activityScore": 27,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: Fujin AI",
@@ -949,7 +965,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 27,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: 西野亮廣相談bot",
@@ -967,7 +983,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 27,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "AI Sukejuru (AIスケジューラー)",
@@ -1001,7 +1017,7 @@
       "ok": true
     },
     "activityScore": 26,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "商品デモ制作キット",
@@ -1019,7 +1035,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 26,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "スキル: アドラー人生相談",
@@ -1037,7 +1053,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 26,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "業務管理アプリ（チーム管理システム v2）",
@@ -1057,7 +1073,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 25,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Asa-check (朝チェック共有ツール)",
@@ -1089,7 +1105,7 @@
       "ok": true
     },
     "activityScore": 23,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "MulmoClaude 作業データ",
@@ -1108,7 +1124,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 23,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "定期実行スキル 3本",
@@ -1126,7 +1142,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 22,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Memo no Maryoku (武器メモ / 次の一手メーカー)",
@@ -1159,7 +1175,7 @@
       "ok": true
     },
     "activityScore": 21,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Kyoku Gacha (今日の一曲ガチャ)",
@@ -1188,7 +1204,7 @@
       "ok": true
     },
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Toilet Finder JP (今すぐトイレ)",
@@ -1216,7 +1232,7 @@
       "ok": true
     },
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Tubuyaki (つぶやき)",
@@ -1249,7 +1265,7 @@
       "ok": true
     },
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "ClipStock",
@@ -1267,7 +1283,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "まほうのもりタッチ",
@@ -1287,7 +1303,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "bilingual-app",
@@ -1303,7 +1319,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 20,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Osoto Tenki (おそと天気)",
@@ -1333,7 +1349,7 @@
       "ok": true
     },
     "activityScore": 19,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Kodomo Park (子どもとおでかけ公園マップ)",
@@ -1361,7 +1377,63 @@
       "ok": true
     },
     "activityScore": 19,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "viberealm",
+    "description": "2nd-Brainのアウトプット配下にあるReactアプリ。",
+    "urls": [],
+    "reasoning": "package.json の name は viberealm。description 欄は空。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "lucide-react"
+    ],
+    "localFolder": "~/ob/プロダクト/2nd-Brain/04_アウトプット/viberealm",
+    "lastUpdated": "2026-03-02T23:26:58.728Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "command-post",
+    "description": "2nd-Brainのアウトプット配下にあるReactアプリ。",
+    "urls": [],
+    "reasoning": "package.json の name は command-post。description 欄は空。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React",
+      "lucide-react"
+    ],
+    "localFolder": "~/ob/プロダクト/2nd-Brain/04_アウトプット/command-post",
+    "lastUpdated": "2026-03-02T22:58:30.351Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "quickvibe",
+    "description": "2nd-Brainのアウトプット配下にあるReactアプリ。",
+    "urls": [],
+    "reasoning": "package.json の name は quickvibe。description 欄は空。",
+    "confidence": "high",
+    "status": "prototype",
+    "techStack": [
+      "React"
+    ],
+    "localFolder": "~/ob/プロダクト/2nd-Brain/04_アウトプット/quickvibe",
+    "lastUpdated": "2026-03-02T22:56:25.411Z",
+    "dateSource": "file",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "activityScore": 19,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Ima Yatteru? (今やってる？ - 営業中のお店マップ)",
@@ -1388,64 +1460,8 @@
       "code": 200,
       "ok": true
     },
-    "activityScore": 19,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
-  },
-  {
-    "projectName": "viberealm",
-    "description": "2nd-Brainのアウトプット配下にあるReactアプリ。",
-    "urls": [],
-    "reasoning": "package.json の name は viberealm。description 欄は空。",
-    "confidence": "high",
-    "status": "prototype",
-    "techStack": [
-      "React",
-      "lucide-react"
-    ],
-    "localFolder": "~/ob/プロダクト/2nd-Brain/04_アウトプット/viberealm",
-    "lastUpdated": "2026-03-02T23:26:58.728Z",
-    "dateSource": "file",
-    "commitCount": 0,
-    "recentCommits": 0,
-    "activityScore": 19,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
-  },
-  {
-    "projectName": "command-post",
-    "description": "2nd-Brainのアウトプット配下にあるReactアプリ。",
-    "urls": [],
-    "reasoning": "package.json の name は command-post。description 欄は空。",
-    "confidence": "high",
-    "status": "prototype",
-    "techStack": [
-      "React",
-      "lucide-react"
-    ],
-    "localFolder": "~/ob/プロダクト/2nd-Brain/04_アウトプット/command-post",
-    "lastUpdated": "2026-03-02T22:58:30.351Z",
-    "dateSource": "file",
-    "commitCount": 0,
-    "recentCommits": 0,
-    "activityScore": 19,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
-  },
-  {
-    "projectName": "quickvibe",
-    "description": "2nd-Brainのアウトプット配下にあるReactアプリ。",
-    "urls": [],
-    "reasoning": "package.json の name は quickvibe。description 欄は空。",
-    "confidence": "high",
-    "status": "prototype",
-    "techStack": [
-      "React"
-    ],
-    "localFolder": "~/ob/プロダクト/2nd-Brain/04_アウトプット/quickvibe",
-    "lastUpdated": "2026-03-02T22:56:25.411Z",
-    "dateSource": "file",
-    "commitCount": 0,
-    "recentCommits": 0,
-    "activityScore": 19,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "activityScore": 18,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "EarFlow（2nd-Brain版）",
@@ -1465,7 +1481,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 18,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "260220kids / 260209文字起こしgrok",
@@ -1483,7 +1499,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 18,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "My Memo",
@@ -1492,9 +1508,21 @@
       {
         "url": "https://legendary-palmier-2f4641.netlify.app",
         "role": "デプロイ先"
+      },
+      {
+        "url": "https://sensational-pasca-423394.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://moonlit-crostata-c6dfda.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://funny-faun-25db76.netlify.app",
+        "role": "旧デプロイ"
       }
     ],
-    "reasoning": "Netlifyサイトのタイトル「My Memo」と一致。",
+    "reasoning": "公開中は legendary-palmier-2f4641。同じ「My Memo」を配信する旧デプロイが Netlify に3つ残っている（いずれも2026-02-04公開・現在も200応答）。",
     "confidence": "high",
     "status": "active",
     "techStack": [
@@ -1511,7 +1539,7 @@
       "ok": true
     },
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "note分析ダッシュボード",
@@ -1530,7 +1558,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "My Memo（Supabase版）",
@@ -1549,7 +1577,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "My Memo（アプリ版）",
@@ -1567,7 +1595,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "voice-memo（Documents側）",
@@ -1585,7 +1613,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "ポモドーロタイマー",
@@ -1604,7 +1632,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "議事録アプリ",
@@ -1623,7 +1651,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "ビックリマン育児アプリ",
@@ -1642,7 +1670,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "子ども日課ゲーミフィケーション",
@@ -1661,7 +1689,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "ドキュメント管理ツール",
@@ -1679,7 +1707,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "メモアプリ（memo-app）",
@@ -1698,7 +1726,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "ノートテイカー",
@@ -1717,7 +1745,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "memo.html",
@@ -1735,7 +1763,7 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "My Memo（単一HTML版）",
@@ -1753,7 +1781,58 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 17,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "応答しないNetlifyサイト 7件",
+    "description": "Netlifyアカウントに残っているが、開いても404になるサイト7件。中身が分からないため正体を特定できない。",
+    "urls": [
+      {
+        "url": "https://monumental-daffodil-958922.netlify.app",
+        "role": "404"
+      },
+      {
+        "url": "https://transcendent-tapioca-86083d.netlify.app",
+        "role": "404"
+      },
+      {
+        "url": "https://beautiful-croissant-8ce0d5.netlify.app",
+        "role": "404"
+      },
+      {
+        "url": "https://graceful-banoffee-54e61c.netlify.app",
+        "role": "404"
+      },
+      {
+        "url": "https://verdant-mandazi-cff424.netlify.app",
+        "role": "404"
+      },
+      {
+        "url": "https://stellular-cassata-395bcb.netlify.app",
+        "role": "404"
+      },
+      {
+        "url": "https://fabulous-souffle-0c4092.netlify.app",
+        "role": "404"
+      }
+    ],
+    "reasoning": "2026-09-20に7件すべてへHTTPアクセスし、全部が404 Not Found。サイト枠だけ残ってデプロイが無い状態。削除候補。作成日は2025-07-29〜2026-02-05。",
+    "confidence": "high",
+    "status": "lost",
+    "techStack": [],
+    "localFolder": null,
+    "deployedAt": "2026-02-05T00:00:00.000Z",
+    "lastUpdated": "2026-02-05T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://monumental-daffodil-958922.netlify.app",
+      "code": 404,
+      "ok": false
+    },
+    "activityScore": 17,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "SystemV5 App",
@@ -1773,13 +1852,18 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 16,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "会員管理システム（旧バックアップ）",
     "description": "会員管理システムの2026-05-03時点のバックアップ。",
-    "urls": [],
-    "reasoning": "FINAL-system-v3.0.jsx(133KB)・member-system-fixed.jsx(27KB)・member-management-system/ を含む。現行は ~/code/ジム3部作/260204会員管理。",
+    "urls": [
+      {
+        "url": "https://serene-stardust-381c83.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "FINAL-system-v3.0.jsx(133KB)のタイトル「会員定着支援システム v3.0」が serene-stardust-381c83 の配信内容と一致。現行は ~/code/ジム3部作/260204会員管理。",
     "confidence": "high",
     "status": "stopped",
     "techStack": [
@@ -1787,12 +1871,426 @@
       "JSX"
     ],
     "localFolder": "~/Documents/プロジェクト/会員管理・ジム/_BACKUP_20260503",
+    "deployedAt": "2026-01-23T00:00:00.000Z",
     "lastUpdated": "2026-01-23T10:51:45.284Z",
     "dateSource": "file",
     "commitCount": 0,
     "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://serene-stardust-381c83.netlify.app",
+      "code": 200,
+      "ok": true
+    },
     "activityScore": 16,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "日数計算",
+    "description": "2つの日付の間の日数を計算するツール。",
+    "urls": [
+      {
+        "url": "https://relaxed-dasik-02b057.netlify.app",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://capable-jalebi-f6df76.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://lovely-hummingbird-dd20ca.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://friendly-caramel-38ae1d.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://iridescent-mandazi-b1bc3e.netlify.app",
+        "role": "旧デプロイ"
+      }
+    ],
+    "reasoning": "同じ「日数計算」を配信するデプロイが5つ。最新は2025-07-30。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-07-30T00:00:00.000Z",
+    "lastUpdated": "2025-07-30T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://relaxed-dasik-02b057.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "生年月日ユーティリティ",
+    "description": "生年月日から年齢などを求めるツール。",
+    "urls": [
+      {
+        "url": "https://admirable-rugelach-73006c.netlify.app",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://astonishing-malasada-e49030.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://glittery-trifle-437c56.netlify.app",
+        "role": "旧デプロイ"
+      }
+    ],
+    "reasoning": "同内容のデプロイが3つ。最新は2025-07-29。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-07-29T00:00:00.000Z",
+    "lastUpdated": "2025-07-29T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://admirable-rugelach-73006c.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "スマート飲み会 会費計算",
+    "description": "飲み会の会費を割り勘計算するツール。",
+    "urls": [
+      {
+        "url": "https://beautiful-valkyrie-f6ad65.netlify.app",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://hilarious-torte-a18bf7.netlify.app",
+        "role": "旧デプロイ"
+      }
+    ],
+    "reasoning": "同内容のデプロイが2つ。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-07-29T00:00:00.000Z",
+    "lastUpdated": "2025-07-29T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://beautiful-valkyrie-f6ad65.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "あなたの人生の物語（ライフタイムライン）",
+    "description": "自分の人生を時系列で振り返るタイムライン。",
+    "urls": [
+      {
+        "url": "https://sparkling-cheesecake-aa0a16.netlify.app",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://roaring-blini-5a6e80.netlify.app",
+        "role": "旧デプロイ"
+      }
+    ],
+    "reasoning": "同内容のデプロイが2つ。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-07-30T00:00:00.000Z",
+    "lastUpdated": "2025-07-30T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://sparkling-cheesecake-aa0a16.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "インタラクティブカレンダー",
+    "description": "操作できるカレンダー。",
+    "urls": [
+      {
+        "url": "https://leafy-alfajores-b0a47e.netlify.app",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://incredible-moonbeam-823444.netlify.app",
+        "role": "旧デプロイ"
+      }
+    ],
+    "reasoning": "同内容のデプロイが2つ。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-08-05T00:00:00.000Z",
+    "lastUpdated": "2025-08-05T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://leafy-alfajores-b0a47e.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "パーソナル健康分析レポート",
+    "description": "個人の健康データを分析してレポートにするツール。",
+    "urls": [
+      {
+        "url": "https://stately-bavarois-089e63.netlify.app",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://gleaming-croissant-7a8cd7.netlify.app",
+        "role": "旧デプロイ"
+      }
+    ],
+    "reasoning": "同内容のデプロイが2つ。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-08-09T00:00:00.000Z",
+    "lastUpdated": "2025-08-09T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://stately-bavarois-089e63.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "血圧チェッカー",
+    "description": "血圧を記録・確認するツール。",
+    "urls": [
+      {
+        "url": "https://dulcet-raindrop-ed1468.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "ジム系の companion-demo に DESIGN-blood-pressure.md があり、血圧機能の先行試作の可能性がある。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-08-06T00:00:00.000Z",
+    "lastUpdated": "2025-08-06T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://dulcet-raindrop-ed1468.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "Time Duration Calculator",
+    "description": "時間の長さを計算するツール。",
+    "urls": [
+      {
+        "url": "https://admirable-pavlova-4e9f18.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-08-06T00:00:00.000Z",
+    "lastUpdated": "2025-08-06T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://admirable-pavlova-4e9f18.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "QRコード生成ツール",
+    "description": "入力した内容からその場でQRコードを作るツール。",
+    "urls": [
+      {
+        "url": "https://thunderous-dusk-ebdead.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "タイトルは Real-time QR Code Generator。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-08-01T00:00:00.000Z",
+    "lastUpdated": "2025-08-01T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://thunderous-dusk-ebdead.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "Personal Dashboard",
+    "description": "個人用のダッシュボード。",
+    "urls": [
+      {
+        "url": "https://candid-blini-c7cb0a.netlify.app",
+        "role": "デプロイ先"
+      }
+    ],
+    "reasoning": "ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-07-28T00:00:00.000Z",
+    "lastUpdated": "2025-07-28T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://candid-blini-c7cb0a.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "My Creative Portfolio",
+    "description": "制作物を並べるポートフォリオサイト。",
+    "urls": [
+      {
+        "url": "https://ephemeral-hotteok-99d25a.netlify.app",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://splendorous-figolla-b69e73.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://zippy-lokum-8d99e4.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://jovial-valkyrie-54cfcf.netlify.app",
+        "role": "旧デプロイ"
+      },
+      {
+        "url": "https://willowy-paletas-5a12cb.netlify.app",
+        "role": "旧デプロイ"
+      }
+    ],
+    "reasoning": "同内容のデプロイが5つ。最も古い2025-06-29から最新2025-08-12まで作り直している。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-08-12T00:00:00.000Z",
+    "lastUpdated": "2025-08-12T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://ephemeral-hotteok-99d25a.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 10,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
+  },
+  {
+    "projectName": "ワールドウィング久留米 サイト",
+    "description": "シニアジム「ワールドウィング久留米」のウェブサイト。キャッチは「～健康にカラダを デザイン～」。",
+    "urls": [
+      {
+        "url": "https://willowy-licorice-086783.netlify.app",
+        "role": "デプロイ先"
+      },
+      {
+        "url": "https://joyful-zuccutto-f215a9.netlify.app",
+        "role": "旧デプロイ"
+      }
+    ],
+    "reasoning": "ジム3部作（会員管理・電話受付・会員伴走）と同じ事業者のサイト。デプロイは2つ。ローカルにソースが見つからない（2026-09-20、~/Documents・~/code・~/Desktop・~/ob をタイトル文字列で全文検索して0件）。Netlify上の配信だけが残っている。",
+    "confidence": "high",
+    "status": "active",
+    "techStack": [
+      "HTML"
+    ],
+    "localFolder": null,
+    "deployedAt": "2025-07-04T00:00:00.000Z",
+    "lastUpdated": "2025-07-04T00:00:00.000Z",
+    "dateSource": "deploy",
+    "commitCount": 0,
+    "recentCommits": 0,
+    "liveStatus": {
+      "url": "https://willowy-licorice-086783.netlify.app",
+      "code": 200,
+      "ok": true
+    },
+    "activityScore": 9,
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   },
   {
     "projectName": "Knowledge Base",
@@ -1815,6 +2313,6 @@
     "commitCount": 0,
     "recentCommits": 0,
     "activityScore": 0,
-    "checkedAt": "2026-09-20T09:42:26.090Z"
+    "checkedAt": "2026-09-20T09:52:26.145Z"
   }
 ]

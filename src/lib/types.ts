@@ -44,7 +44,8 @@ export const ProjectGrouping = z.object({
 
   // === ここから下は scripts/refresh-activity.mjs が実測して書き込む。AIは推定しない ===
   lastUpdated: z.string().nullable().optional().describe('最終開発日（ISO8601）'),
-  dateSource: z.enum(['git', 'file', 'none']).optional().describe('最終開発日の根拠: git=最終コミット日, file=ソースの更新日時, none=ローカル不明'),
+  dateSource: z.enum(['git', 'file', 'deploy', 'none']).optional().describe('最終開発日の根拠: git=最終コミット日, file=ソースの更新日時, deploy=公開日, none=不明'),
+  deployedAt: z.string().nullable().optional().describe('公開先の最終公開日（ソースが手元に無いもの用・手入力）'),
   commitCount: z.number().optional().describe('累計コミット数（gitのときのみ）'),
   recentCommits: z.number().optional().describe('直近90日のコミット数'),
   activityScore: z.number().optional().describe('活発さ 0-100（新しさ6割＋開発量4割）'),

@@ -20,7 +20,7 @@ interface ProjectCardProps {
   localFolder?: string | null;
   // scripts/refresh-activity.mjs が実測した値
   lastUpdated?: string | null;
-  dateSource?: 'git' | 'file' | 'none';
+  dateSource?: 'git' | 'file' | 'deploy' | 'none';
   commitCount?: number;
   recentCommits?: number;
   activityScore?: number;
@@ -88,6 +88,7 @@ function freshnessColor(iso: string): string {
 const dateSourceNote: Record<string, string> = {
   git: '最終コミット日',
   file: 'ソースファイルの更新日時（gitの記録がないため）',
+  deploy: '公開先の最終公開日（ソースが手元に残っていないため）',
   none: 'ローカルフォルダが見つからない',
 };
 
@@ -151,6 +152,11 @@ export function ProjectCard({
             {dateSource === 'file' && (
               <span className="text-xs text-gray-400" title="gitの記録がないため、ソースファイルの更新日時を使っています">
                 ※ファイル日時から推定
+              </span>
+            )}
+            {dateSource === 'deploy' && (
+              <span className="text-xs text-orange-500" title="ソースが手元に残っていないため、公開先の最終公開日を使っています">
+                ※公開日から（ソース未発見）
               </span>
             )}
           </>
