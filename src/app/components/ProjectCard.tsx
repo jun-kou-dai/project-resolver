@@ -104,20 +104,40 @@ export function ProjectCard({
   const st = statusConfig[status] || statusConfig.unknown;
   const [editingFolder, setEditingFolder] = useState(false);
   const [folderValue, setFolderValue] = useState(localFolder || '');
-  const [copied, setCopied] = useState<'path' | 'cd' | 'failed' | null>(null);
+  const [openState, setOpenState] = useState<'opening' | 'opened' | 'copied' | 'failed' | null>(null);
+  const isLost = status === 'lost';
 
-  // ブラウザは https ページからの file:// を遮断する（Not allowed to load local resource）。
-  // 実際に手が届くのはクリップボード経由だけなので、押したらパスを写す。
-  // 成否を握りつぶすと「コピーしました」と嘘を出すことになるので、失敗はそのまま出す。
-  async function copyText(text: string, kind: 'path' | 'cd') {
+  // 押したらFinderで開く。ブラウザ単体では file:// が遮断されるので、
+  // 手元で動いているサーバーの /api/open に開かせる。
+  // サーバーが動いていない時だけ、パスのコピーに落とす。
+  async function openFolder(path: string) {
+    setOpenState('opening');
+    // 同じオリジン（localhostで開いている場合）→ 手元のサーバー の順に試す
+    const endpoints = [`${location.origin}/api/open`, 'http://localhost:3000/api/open'];
+    for (const url of endpoints) {
+      try {
+        const res = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ path }),
+        });
+        if (res.ok) {
+          setOpenState('opened');
+          setTimeout(() => setOpenState(null), 1800);
+          return;
+        }
+      } catch {
+        // このエンドポイントは届かない。次を試す
+      }
+    }
+    // どこにも届かなかった。せめてパスを写す
     let ok = false;
     try {
-      await navigator.clipboard.writeText(text);
+      await navigator.clipboard.writeText(path);
       ok = true;
     } catch {
-      // clipboard API が使えないブラウザ・非許可時の保険
       const ta = document.createElement('textarea');
-      ta.value = text;
+      ta.value = path;
       ta.style.position = 'fixed';
       ta.style.opacity = '0';
       document.body.appendChild(ta);
@@ -125,10 +145,9 @@ export function ProjectCard({
       try { ok = document.execCommand('copy'); } catch { ok = false; }
       ta.remove();
     }
-    setCopied(ok ? kind : 'failed');
-    setTimeout(() => setCopied(null), ok ? 1800 : 4000);
+    setOpenState(ok ? 'copied' : 'failed');
+    setTimeout(() => setOpenState(null), 4000);
   }
-  const isLost = status === 'lost';
 
   function handleFolderSave() {
     onLocalFolderChange?.(folderValue);
@@ -232,8 +251,8 @@ export function ProjectCard({
               {localFolder ? (
                 <button
                   type="button"
-                  onClick={() => copyText(localFolder, 'path')}
-                  title="クリックでパスをコピー。Finderで ⌘⇧G を押して貼り付けると開けます"
+                  onClick={() => openFolder(localFolder)}
+                  title="クリックでFinderに表示します（手元でアプリが動いている必要があります）"
                   className="font-mono text-amber-900 break-words text-left hover:bg-amber-100 hover:underline rounded px-1 -mx-1 cursor-pointer transition-colors min-w-0 basis-full sm:basis-auto"
                 >
                   {localFolder}
@@ -246,7 +265,15 @@ export function ProjectCard({
               {localFolder && (
                 <button
                   type="button"
-                  onClick={() => copyText(`cd "${localFolder}"`, 'cd')}
+                  onClick={async () => {
+                    try {
+                      await navigator.clipboard.writeText(`cd "${localFolder}"`);
+                      setOpenState('copied');
+                    } catch {
+                      setOpenState('failed');
+                    }
+                    setTimeout(() => setOpenState(null), 2500);
+                  }}
                   title="ターミナルにそのまま貼れる cd コマンドをコピー"
                   className="text-xs text-amber-600 hover:text-amber-800 cursor-pointer shrink-0"
                 >
@@ -259,13 +286,19 @@ export function ProjectCard({
               >
                 {localFolder ? '変更' : '設定'}
               </button>
-              {copied === 'failed' ? (
-                <span className="text-xs text-red-700 bg-red-50 border border-red-200 rounded px-2 py-0.5 shrink-0">
-                  コピーできませんでした。パスを選んで手で複写してください
-                </span>
-              ) : copied ? (
+              {openState === 'opening' ? (
+                <span className="text-xs text-gray-500 shrink-0">開いています…</span>
+              ) : openState === 'opened' ? (
                 <span className="text-xs text-green-700 bg-green-50 border border-green-200 rounded px-2 py-0.5 shrink-0 whitespace-nowrap">
-                  {copied === 'cd' ? 'cdコマンドをコピーしました' : 'コピーしました → Finderで ⌘⇧G'}
+                  Finderで開きました
+                </span>
+              ) : openState === 'copied' ? (
+                <span className="text-xs text-amber-700 bg-amber-100 border border-amber-300 rounded px-2 py-0.5 shrink-0">
+                  アプリが動いていないのでパスをコピーしました
+                </span>
+              ) : openState === 'failed' ? (
+                <span className="text-xs text-red-700 bg-red-50 border border-red-200 rounded px-2 py-0.5 shrink-0">
+                  開けませんでした
                 </span>
               ) : null}
             </div>
