@@ -104,6 +104,30 @@ export function ProjectCard({
   const st = statusConfig[status] || statusConfig.unknown;
   const [editingFolder, setEditingFolder] = useState(false);
   const [folderValue, setFolderValue] = useState(localFolder || '');
+  const [copied, setCopied] = useState<'path' | 'cd' | 'failed' | null>(null);
+
+  // ブラウザは https ページからの file:// を遮断する（Not allowed to load local resource）。
+  // 実際に手が届くのはクリップボード経由だけなので、押したらパスを写す。
+  // 成否を握りつぶすと「コピーしました」と嘘を出すことになるので、失敗はそのまま出す。
+  async function copyText(text: string, kind: 'path' | 'cd') {
+    let ok = false;
+    try {
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    } catch {
+      // clipboard API が使えないブラウザ・非許可時の保険
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { ok = document.execCommand('copy'); } catch { ok = false; }
+      ta.remove();
+    }
+    setCopied(ok ? kind : 'failed');
+    setTimeout(() => setCopied(null), ok ? 1800 : 4000);
+  }
   const isLost = status === 'lost';
 
   function handleFolderSave() {
@@ -187,7 +211,7 @@ export function ProjectCard({
 
       {/* ローカルフォルダ: 最も重要な情報 */}
       <div className="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
-        <div className="flex items-center gap-2 text-sm">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
           <span className="text-amber-700 font-medium shrink-0">📁 ローカル:</span>
           {editingFolder ? (
             <div className="flex items-center gap-2 flex-1">
@@ -204,13 +228,30 @@ export function ProjectCard({
               <button onClick={() => setEditingFolder(false)} className="text-xs text-gray-400 hover:text-gray-600 cursor-pointer">取消</button>
             </div>
           ) : (
-            <div className="flex items-center gap-2 flex-1">
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 flex-1 min-w-0">
               {localFolder ? (
-                <span className="font-mono text-amber-900 break-all">{localFolder}</span>
+                <button
+                  type="button"
+                  onClick={() => copyText(localFolder, 'path')}
+                  title="クリックでパスをコピー。Finderで ⌘⇧G を押して貼り付けると開けます"
+                  className="font-mono text-amber-900 break-words text-left hover:bg-amber-100 hover:underline rounded px-1 -mx-1 cursor-pointer transition-colors min-w-0 basis-full sm:basis-auto"
+                >
+                  {localFolder}
+                </button>
               ) : noLocalSource ? (
                 <span className="text-amber-600">ローカルにソースなし（探して見つからなかった）</span>
               ) : (
                 <span className="text-amber-500 italic">未設定</span>
+              )}
+              {localFolder && (
+                <button
+                  type="button"
+                  onClick={() => copyText(`cd "${localFolder}"`, 'cd')}
+                  title="ターミナルにそのまま貼れる cd コマンドをコピー"
+                  className="text-xs text-amber-600 hover:text-amber-800 cursor-pointer shrink-0"
+                >
+                  cdをコピー
+                </button>
               )}
               <button
                 onClick={() => { setFolderValue(localFolder || ''); setEditingFolder(true); }}
@@ -218,6 +259,15 @@ export function ProjectCard({
               >
                 {localFolder ? '変更' : '設定'}
               </button>
+              {copied === 'failed' ? (
+                <span className="text-xs text-red-700 bg-red-50 border border-red-200 rounded px-2 py-0.5 shrink-0">
+                  コピーできませんでした。パスを選んで手で複写してください
+                </span>
+              ) : copied ? (
+                <span className="text-xs text-green-700 bg-green-50 border border-green-200 rounded px-2 py-0.5 shrink-0 whitespace-nowrap">
+                  {copied === 'cd' ? 'cdコマンドをコピーしました' : 'コピーしました → Finderで ⌘⇧G'}
+                </span>
+              ) : null}
             </div>
           )}
         </div>
